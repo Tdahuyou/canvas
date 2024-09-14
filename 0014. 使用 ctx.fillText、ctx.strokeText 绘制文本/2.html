@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本的最大宽度</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      ctx.font = 'bold italic 4rem sans-serif'
+      ctx.fillText('Tdahuyou', 200, 100)
+
+      ctx.fillText('Tdahuyou', 200, 200, 300)
+      // 文本最大宽度为 300（此时文本不会被压缩，因为最大宽度足够。）
+
+      ctx.fillText('Tdahuyou', 200, 300, 200)
+      // 文本最大宽度为 200（此时文本会被压缩，往起始点方向压缩。）
+
+      ctx.fillText('Tdahuyou', 200, 400, 100)
+      // 文本最大宽度为 400（此时文本会被压缩，往起始点方向压缩。）
+    </script>
+  </body>
+</html>

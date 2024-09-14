@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'drop-shadow(x y blur color)'
+      // x - 阴影在水平方向上的偏移量，可以是正值或负值。
+      // y - 阴影在垂直方向上的偏移量，可以是正值或负值。
+      // blur - 模糊半径，定义阴影的软化程度。数值越大，阴影越模糊和扩散。
+      // color - 阴影的颜色。
+      createCanvas('drop-shadow(10px 10px 10px yellow)')
+      createCanvas('drop-shadow(10px 10px 10px #231f1d)')
+      createCanvas('drop-shadow(10px 10px 10px #e4a5a8)')
+    </script>
+  </body>
+</html>

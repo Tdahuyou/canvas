@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // 使用 ctx.clip() 方法设置裁剪区域。
+      // 接下来绘制的图形只会在裁剪路径中展示。
+      // 在指定裁剪区域之前绘制的图形不会受到影响。
+
+      // 注意：裁剪的时候是先指定裁剪区域再绘制图形。
+
+      // 绘制一个蓝色矩形。
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 400, 400, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.beginPath()
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(100, 100, 200, 200)
+      }
+
+      // 从一个蓝色的矩形中裁剪出一个菱形。
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 400, 400, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        // 菱形裁剪区域
+        ctx.beginPath()
+        ctx.moveTo(100, 200)
+        ctx.lineTo(200, 100)
+        ctx.lineTo(300, 200)
+        ctx.lineTo(200, 300)
+        ctx.closePath()
+        ctx.clip()
+
+        // 下面绘制的矩形，只有在上述菱形中的那一部分区域会正常展示。
+        ctx.beginPath()
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(100, 100, 200, 200)
+      }
+
+    </script>
+  </body>
+</html>

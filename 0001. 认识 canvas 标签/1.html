@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>240519. 📝 认识 &lt;canvas&gt;</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    <script>
+      // 获取上述创建好的 canvas 标签
+      const canvas = document.getElementById('myCanvas')
+
+      // 获取 canvas 这玩意儿的上下文
+      // 可以理解为获取画笔，需要先有画笔才能绘图不是。
+      const ctx = canvas.getContext('2d')
+
+      ctx.fillStyle = 'red'
+      ctx.fillRect(10, 10, 50, 50)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'grayscale()'
+      // 设置灰度
+      // 取值范围：0～1
+      // 当设为 0 时，元素的颜色不发生变化。
+      // 当设为 1 时，表示元素完全转为灰色，即彻底灰度化。
+      createCanvas('grayscale(0)')
+      createCanvas('grayscale(0.5)')
+      createCanvas('grayscale(1)')
+    </script>
+  </body>
+</html>

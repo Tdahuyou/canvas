@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'saturate()'
+      // 设置饱和度
+      // 1 表示原样
+      // < 1 图像整体会变灰
+      // > 1 图像整体颜色会更鲜明
+      createCanvas('saturate(0.5)')
+      createCanvas('saturate(1)')
+      createCanvas('saturate(1.5)')
+    </script>
+  </body>
+</html>

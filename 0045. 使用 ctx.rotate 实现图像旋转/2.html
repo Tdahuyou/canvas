@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // 需求描述：
+      // 画布上有一个正方形，请通过 ctx.rotate 旋转，将这个正方形变为菱形。
+      // 要求正方形中心位置和旋转后得到的菱形的中心位置是一样的。
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 150, 150, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+
+      // 假设正方形绘制在 (50, 50) 位置，宽高为 50。
+      ctx.strokeStyle = 'red'
+      ctx.setLineDash([10])
+      ctx.strokeRect(50, 50, 50, 50)
+
+      // 1. 将坐标轴的原点设置为旋转矩形的中心
+      ctx.translate(75, 75)
+      // 2. 坐标轴旋转 45°
+      ctx.rotate(45 * Math.PI / 180)
+
+      ctx.fillStyle = 'blue'
+      // 3. 绘制矩形
+      ctx.rect(50 - 75, 50 - 75, 50, 50)
+      // 注意：
+      // 坐标轴的位置发生了变化
+      // 如果想要在原始图形的中心绘制菱形，需要将矩形的位置设置为 (-25, -25)
+      // 这是基于原始图形的位置和坐标偏移位置计算出来的结果 (50 - 75, 50 - 75)
+      ctx.fill()
+    </script>
+  </body>
+</html>

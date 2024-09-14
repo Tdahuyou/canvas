@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ctx.textAlign</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      // MDN DOC textAlign
+      // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign
+
+      // ctx.textAlign 属性用于设置文本基于锚点的水平位置。
+
+      // 常用属性值：
+      // left   文本在锚点的左侧
+      // right  文本在锚点的右侧
+      // center 文本在锚点的中心
+
+      ctx.textAlign = 'center' // 水平居中对齐
+
+      ctx.font = '4rem sans-serif'
+      ctx.fillText('Tdahuyou', 200, 200)
+
+      // 锚点
+      ctx.beginPath()
+      ctx.fillStyle = 'red'
+      ctx.arc(200, 200, 8, 0, Math.PI * 2)
+      ctx.fill()
+    </script>
+  </body>
+</html>

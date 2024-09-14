@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      // 错误做法：
+      ctx.rect(50, 50, 100, 100)
+      ctx.strokeStyle = 'blue'
+      ctx.stroke()
+
+      ctx.rect(250, 50, 100, 100)
+      ctx.fillStyle = 'red'
+      ctx.fill()
+
+      // stroke() 或 fill() 默认会对之前所有绘制的路径进行一个处理。
+      // 我们可以用 beginPath() 对路径进行分组处理。
+      // 如果不分组的话，那么 fill() 或 stroke() 会对之前所有的路径进行处理。
+
+      // 如果没有调用 beginPath()，那么之前的路径会被保留，新的路径会被添加到之前的路径上。
+      // 当执行 stroke() 或 fill() 时，会对所有路径进行处理。
+
+      // 如果调用了 beginPath()，那么之前的路径会被清空，新的路径会被添加到空路径上。
+      // 当执行 stroke() 或 fill() 时，只会对新的路径进行处理。
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 使用 ctx.drawImage 引入图像</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+
+      const ctx = cavnas.getContext('2d')
+
+      // ctx.drawImage(imgSource, x, y, width, height)
+
+      // x, y
+      // 表示在图像在 canvas 画布中放置的起始坐标位置。
+
+      // width, height
+      // 表示图像展示的大小，此时图片会按照指定的尺寸展示。
+      // 如果照片儿的宽高比和指定的宽高比不一致，图片会被拉伸或压缩。
+
+      const img = new Image()
+      img.src = './week.png'
+      img.onload = function () {
+        ctx.drawImage(img, 100, 100, 300, 150)
+      }
+    </script>
+  </body>
+</html>

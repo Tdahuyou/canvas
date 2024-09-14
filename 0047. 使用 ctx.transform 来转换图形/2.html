@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 500, 200, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      // 原始矩形
+      ctx.fillStyle = 'blue'
+      ctx.fillRect(100, 100, 100, 50)
+      // 从 x 为 100，y 为 100 的位置开始
+      // 画一个横向长度为 100 纵向长度为 50 的矩形
+
+      ctx.transform(2, 0, 0, 0.5, 0, 0)
+      // 表示横向放大 2 倍，纵向缩小 0.5 倍。
+
+      ctx.fillStyle = 'red'
+      ctx.fillRect(100, 100, 100, 50)
+      // 从 x 为 2 * 100，y 为 0.5 * 100 的位置开始
+      // 画一个横向长度为 2 * 100 纵向长度为 0.5 * 50 的矩形
+    </script>
+  </body>
+</html>

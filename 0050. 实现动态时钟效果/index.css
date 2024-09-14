@@ -1,0 +1,10 @@
+canvas {
+  /* border: 2px solid #ccc; */
+  /* background-color: black; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* 画布大小是 400px * 400px */
+  margin-left: -200px;
+  margin-top: -200px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 ctx.clearRect 方法</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      ctx.lineWidth = 10
+      ctx.strokeStyle = 'red'
+
+      // 使用 ctx.clearRect(x, y, width, height) 方法
+      // 清除画布中的指定矩形区域
+
+      // 【1】绘制一条横线
+      ctx.beginPath()
+      ctx.moveTo(0, 100)
+      ctx.lineTo(400, 100)
+      ctx.stroke()
+
+      // 【2】绘制一条竖线
+      ctx.beginPath()
+      ctx.moveTo(100, 0)
+      ctx.lineTo(100, 400)
+      ctx.stroke()
+    </script>
+  </body>
+</html>

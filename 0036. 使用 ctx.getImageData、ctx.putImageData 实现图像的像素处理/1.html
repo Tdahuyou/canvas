@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 【读】读取图片像素点的 rgba 值
+      // imageData = ctx.getImageData(x, y, width, height)
+      // imageData.data 是一个一维数组
+      // 每 4 位表示一个像素点的 rgba 值
+
+      // 【写】设置图片像素点的 rgba 值
+      // ctx.putImageData(imageData, x, y)
+      // 在读取到 imageData 数据之后，可以对每个像素点的 rgba 值进行处理，然后再将处理后的数据放回到 canvas 中。
+      // 比如可以对原图进行置灰、反色等处理。
+
+      // 注意：要使用 open with Live Server 打开，否则会报跨域错误。
+      
+      const canvas = document.createElement('canvas')
+      canvas.width = 800
+      canvas.height = 800
+      document.body.append(canvas)
+
+      const ctx = canvas.getContext('2d')
+
+      // console.log(
+      //   '(0, 0) 点到 (10, 10) 点围成的区域 像素点数量：',
+      //   ctx.getImageData(0, 0, 10, 10).data.length / 4
+      // )
+
+      const img = new Image()
+      img.src = './home.png'
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0)
+
+        const imageData = ctx.getImageData(0, 0, img.width, img.height)
+        for (let i = 0; i < imageData.data.length; i += 4) {
+          const r = imageData.data[i]
+          const g = imageData.data[i + 1]
+          const b = imageData.data[i + 2]
+          // const a = imageData.data[i + 3]
+
+          // 图像置灰处理
+          const avg = (r + g + b) / 3
+          imageData.data[i] = avg
+          imageData.data[i + 1] = avg
+          imageData.data[i + 2] = avg
+        }
+        ctx.putImageData(imageData, 0, 0)
+        // ctx.putImageData(imageData, img.width, 0) // 将置灰的图像放在原图像右侧
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // 被裁剪的参考图像。
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 500, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.beginPath()
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+      }
+
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 500, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.beginPath()
+        ctx.arc(150, 150, 100, 0, Math.PI * 2, false) // 顺时针
+        ctx.arc(300, 150, 100, 0, Math.PI * 2, false) // 顺时针
+        ctx.arc(225, 250, 100, 0, Math.PI * 2, false) // 顺时针
+        ctx.clip('nonzero')
+
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+      }
+
+      /*
+      问题：
+      暂时还不理解为什么最终渲染出来的图像。
+      */
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 500, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.beginPath()
+        ctx.arc(150, 150, 100, 0, Math.PI * 2, false) // 顺时针
+        ctx.arc(300, 150, 100, 0, Math.PI * 2, true) //  逆时针
+        ctx.arc(225, 250, 100, 0, Math.PI * 2, false) // 顺时针
+        ctx.clip('nonzero')
+
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      ctx.fillStyle = 'red'
+
+      ctx.beginPath()
+      ctx.arc(50, 200, 4, 0, Math.PI * 2) // 起点
+      ctx.fill()
+      ctx.beginPath()
+      ctx.arc(100, 100, 4, 0, Math.PI * 2) // 控制点
+      ctx.fill()
+      ctx.beginPath()
+      ctx.arc(250, 200, 4, 0, Math.PI * 2) // 终点
+      ctx.fill()
+
+      // ctx.quadraticCurveTo(cpx, cpy, x, y)
+      // 使用 ctx.quadraticCurveTo 方法绘制二次贝塞尔曲线
+
+      // cpx cpy 表示控制点坐标
+      // x y 表示终点坐标
+
+      // 起点坐标是 moveTo 设置，或者是上一次绘图的结尾。
+
+      ctx.beginPath()
+      ctx.moveTo(50, 200)
+      ctx.quadraticCurveTo(100, 100, 250, 200)
+      ctx.stroke()
+    </script>
+  </body>
+</html>

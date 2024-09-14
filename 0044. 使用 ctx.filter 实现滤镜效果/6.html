@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'sepia(1)'
+      // 用于给图像添加一种深褐色的怀旧效果，类似于早期摄影中使用的棕褐色调。
+      // 0 表示原样
+      // 1 怀旧风格（深褐色）
+      createCanvas('sepia(0)')
+      createCanvas('sepia(0.5)')
+      createCanvas('sepia(1)')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+
+    <script>
+      // 使用 JSDoc 注释来标注 canvas 变量类型。
+      /** @type {HTMLCanvasElement} */
+      const c = document.getElementById('c')
+
+      // c.getContext
+      // 输入 c.getcon 时，会自动提示 c.getContext
+
+      // 假如没有 /** @type {HTMLCanvasElement} */ 这一部分的类型声明信息的话
+      // 那么 vscode 将无法识别变量 c 的类型，也就无法智能提示 c.getContext
+    </script>
+  </body>
+</html>

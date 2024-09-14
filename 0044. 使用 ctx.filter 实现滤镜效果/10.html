@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas Using SVG Filter</title>
+  </head>
+  <body>
+    <svg width="0" height="0">
+      <!-- 定义一个 svg 滤镜 -->
+      <defs>
+        <filter id="blur-filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur>
+        </filter>
+      </defs>
+    </svg>
+
+
+    <script src="./drawGrid.js"></script>
+    <script>
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 200, 200, 50)
+      document.body.appendChild(canvas)
+      const ctx = canvas.getContext('2d')
+
+      // 引用 svg 滤镜。
+      ctx.filter = 'url(#blur-filter)'
+
+      // 绘制一个矩形
+      ctx.fillStyle = 'red'
+      ctx.fillRect(50, 50, 100, 100)
+    </script>
+  </body>
+</html>

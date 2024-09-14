@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 这部分的内容涉及到图像合成技术相关的专业知识。
+      // 对于初学者来说，只需要知道这个属性的值可以控制图像的合成效果即可。
+      // 比如知道如何实现更亮、更暗等效果就行。
+      // 暂时不要求掌握像素计算的具体细节。
+      // 也就是暂时不需要知道如何更细粒度的去调节图像的合成效果。
+
+      // lighter 重叠部分的颜色值相加，造成亮化效果。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'lighter'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+      // multiply 重叠部分的颜色值相乘，结果更暗，增加色彩的饱和度。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'multiply'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+      // screen 重叠部分采用补色相乘的方式处理，使颜色值更亮，产生高光效果。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'screen'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+      // darken 在重叠部分选择较暗的颜色，使图像整体显得更暗。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'darken'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+      // lighten 在重叠部分选择较亮的颜色，使图像整体显得更亮。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'lighten'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>描边文本</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+
+      const ctx = cavnas.getContext('2d')
+
+      ctx.font = 'bold italic 4rem sans-serif'
+      ctx.fillText('Tdahuyou', 200, 200)
+      ctx.strokeText('Tdahuyou', 200, 300)
+
+      // ctx.strokeText(text, x, y[, maxWidth])
+      // 用于绘制描边文本。
+
+      // 对比 ctx.fillText、ctx.strokeText 两个绘制文本的方法。
+      // 相同点：都是用于在画布上绘制文本，并且参数都是一样的。
+      // 不同点：fillText 绘制的文本是实心的，strokeText 绘制的文本是空心的。
+    </script>
+  </body>
+</html>

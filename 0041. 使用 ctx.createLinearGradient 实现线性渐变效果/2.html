@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // 前面的示例创建的是一个铺满整个 canvas 的渐变效果。
+      // 如果渐变区域小于矩形区域的话，那么非渐变区域，将展示渐变的“终点”颜色。
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 500, 200, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.globalAlpha = 0.8
+
+      // 渐变区域是从 100-400
+      const gradient = ctx.createLinearGradient(100, 0, 400, 0)
+      gradient.addColorStop(0, 'red')
+      gradient.addColorStop(0.5, 'green')
+      gradient.addColorStop(1, 'blue')
+
+      // 绘制的矩形是从 0-500
+      ctx.fillStyle = gradient
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+      // 仔细观察最终效果，会发现 0-100 和 400-500 的区域是渐变的“终点”颜色。
+      // 这部分是没有渐变效果的。
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 使用 ctx.arc 绘制圆弧</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      ctx.lineWidth = 10
+      ctx.strokeStyle = 'red'
+
+      // ctx.arc(x, y, radius, startAngle, endAngle, counterclockwise)
+
+      // x y radius 表示圆点坐标、半径。
+
+      // startAngle 表示从哪个点开始画。单位是弧度。
+      // endAngle   表示画到哪个点结束。单位是弧度。
+      // 0 度点所在位置：3 点钟方向。
+
+      // counterclockwise 表示绘制方向。
+      // false 顺时针（默认）
+      // true  逆时针
+
+      // 圆
+      ctx.beginPath()
+      ctx.arc(100, 100, 50, 0, Math.PI * 2)
+      ctx.stroke()
+
+      // 上半圆
+      ctx.beginPath()
+      ctx.arc(300, 100, 50, 0, Math.PI, true)
+      ctx.stroke()
+
+      // 下半圆
+      ctx.beginPath()
+      ctx.arc(300, 300, 50, 0, Math.PI, false)
+      ctx.stroke()
+
+      // 3/4 圆
+      ctx.beginPath()
+      ctx.arc(100, 300, 50, Math.PI / 2, Math.PI, true)
+      ctx.stroke()
+    </script>
+  </body>
+</html>

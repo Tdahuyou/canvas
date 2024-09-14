@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'contrast()'
+      // 设置对比度
+      // 1 表示原样
+      // < 1 对比度减弱，图像各部分颜色更加接近
+      // > 1 对比度增强，颜色更鲜明
+      createCanvas('contrast(0.5)')
+      createCanvas('contrast(1)')
+      createCanvas('contrast(1.5)')
+    </script>
+  </body>
+</html>

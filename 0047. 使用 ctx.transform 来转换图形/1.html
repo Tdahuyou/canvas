@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 500, 500, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      // 原始矩形
+      ctx.fillStyle = 'blue'
+      ctx.fillRect(50, 50, 100, 50)
+
+      ctx.transform(1, 0, 0, 1, 100, 100)
+      // 表示横纵各移动 100
+
+      ctx.fillStyle = 'red'
+      ctx.fillRect(50, 50, 100, 50)
+    </script>
+  </body>
+</html>

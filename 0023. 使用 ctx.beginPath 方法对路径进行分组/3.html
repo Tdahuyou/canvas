@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      // 正确做法2：
+      ctx.strokeStyle = 'blue'
+      ctx.strokeRect(50, 50, 100, 100)
+
+      // ctx.beginPath()
+      // 这里有 or 没有 beginPath() 都可以。
+
+      ctx.fillStyle = 'red'
+      ctx.fillRect(250, 50, 100, 100)
+
+      // ctx.fillRect()
+      // ctx.strokeRect()
+      // 这两个 API 不会受 beginPath 的影响。
+      // 因为 strokeRect()、fillRect() 是一个独立的绘制操作，不会受到之前的路径的影响。
+    </script>
+  </body>
+</html>

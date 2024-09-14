@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+
+      // ctx.filter = 'hue-rotate(180deg)'
+      // 用于设置色调
+      // 参数表示色调旋转的角度。
+      // 角度可以是从 0deg 到 360deg。
+      // 其中 0deg 表示不进行色调改变，360deg 表示完全旋转一圈，效果同 0deg。
+      // 不同的角度值会将颜色沿着色彩环移动，产生不同的视觉效果。
+      createCanvas('hue-rotate(0deg)')
+      createCanvas('hue-rotate(90deg)')
+      createCanvas('hue-rotate(180deg)')
+      createCanvas('hue-rotate(270deg)')
+      createCanvas('hue-rotate(360deg)')
+    </script>
+  </body>
+</html>

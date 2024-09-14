@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // ctx.scale 这玩意儿如果传入的参数是负数，那么将会导致坐标系反转。
+
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 500, 500, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      ctx.globalAlpha = 0.5
+
+      // 将画布原点移至中心
+      ctx.translate(canvas.width / 2, canvas.height / 2)
+
+      // 辅助点 标注出原点
+      ctx.fillStyle = 'blue'
+      ctx.arc(0, 0, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 绘制一个原始大小的红色矩形
+      ctx.fillStyle = 'red'
+      ctx.fillRect(50, 50, 100, 100)
+
+      // 水平翻转
+      ctx.scale(-1, 1)
+      // 由于坐标系被翻转，所以这里的 x 坐标的正方向（向右）指向了原来的负方向（向左）。
+
+      // 绘制一个蓝色矩形，坐标和尺寸都跟前面的矩形一样。
+      ctx.fillStyle = 'blue'
+      ctx.fillRect(50, 50, 100, 100) // 注意这里的 x 坐标是负的
+    </script>
+  </body>
+</html>

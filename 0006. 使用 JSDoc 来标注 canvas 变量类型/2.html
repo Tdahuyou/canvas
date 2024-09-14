@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 如果是通过 createElement 的方式来创建一个 canvas 的话，那么 IDE 是能够给我们提示的。
+      // 因为 IDE 能够识别出 canvas 变量的类型是 HTMLCanvasElement
+      const canvas = document.createElement('canvas')
+      const ctx = canvas.getContext('2d')
+    </script>
+  </body>
+</html>

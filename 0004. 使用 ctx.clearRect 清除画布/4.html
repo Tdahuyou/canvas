@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 ctx.clearRect 方法</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+
+      ctx.lineWidth = 10
+      ctx.strokeStyle = 'red'
+
+      // 清除画布的本质就是将指定的矩形区域的透明度设置为 0
+      // 之前的路径依然是存在的
+
+      // 如果在开始绘制新的路径时不希望之前的路径出现
+      // 别忘了调用 beginPath() 方法
+
+      // 【1】绘制一条横线
+      ctx.beginPath() // 假如将这个 beginPath 和下面的都注释掉的话，那么最后调用 stroke() 时，会将之前的网格路径也一起绘制出来。（不过 lineWidth 和 strokeStyle 不再是 drawGrid 方法中封装的值了。）
+      ctx.moveTo(0, 100)
+      ctx.lineTo(400, 100)
+      ctx.stroke()
+
+      ctx.clearRect(0, 0, cavnas.width, cavnas.height) // 擦除整个画布
+
+      // 【2】绘制一条竖线
+      // ctx.beginPath() // 如果没有 beginPath()，绘制【2】竖线的时候，之前的【1】横线也会出现。
+      ctx.moveTo(100, 0)
+      ctx.lineTo(100, 400)
+      ctx.stroke() // 绘制路径，此时会同时绘制出【1】、【2】
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // ctx.rotate 用于旋转画布的当前绘图。
+
+      // 注意：
+      // 1. 旋转不会对之前绘制好的内容有影响。
+      // 2. 旋转的角度单位是弧度。
+      // 3. 旋转默认是基于画布的原点来旋转的。
+      // 4. 这种旋转会影响到之后所有的绘制操作，直到画布的变换状态被重置或者再次修改。
+      // 5. 每次的旋转都是基于当前的坐标轴已旋转的角度进一步旋转的。
+
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 300, 300, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      ctx.globalAlpha = 0.5
+
+      ctx.fillStyle = 'red'
+      ctx.rect(50, 50, 50, 50)
+      ctx.fill()
+
+      // 坐标轴旋转 0°
+      // 在 (200, 50) 位置绘制一个圆
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 10°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 20°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 30°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 40°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 50°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 坐标轴旋转 60°
+      // 坐标旋转 10° 再绘制一个圆
+      ctx.rotate(10 * Math.PI / 180)
+      ctx.beginPath()
+      ctx.arc(200, 50, 10, 0, Math.PI * 2)
+      ctx.fill()
+    </script>
+  </body>
+</html>

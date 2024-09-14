@@ -1,0 +1,21 @@
+/*
+使用绝对定位的方式
+让结果和 canvas 绘制在同一块区域
+ */
+canvas {
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  position: absolute;
+}
+
+#result {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 3rem;
+  position: absolute;
+
+  /* 防止文本内容被选中 */
+  user-select: none;
+}

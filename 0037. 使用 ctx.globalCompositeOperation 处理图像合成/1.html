@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // ctx.globalCompositeOperation
+      // 用于设置在已有的画布内容上绘制新图形时，如何控制这些图形之间的合成或混合模式。
+      // 通过改变这个属性的值，你可以定义新图形应该如何与背景的已有图形相结合。
+
+      // Source（源）
+      // 指的是你正尝试在画布上绘制的新图形或图像。
+
+      // Destination（目标）
+      // 指的是画布上已经存在的图形或图像。
+
+      // source-over（默认值） 新的图形会绘制在旧图形上方。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        // ctx.globalCompositeOperation = 'source-over'
+        // 这条语句写或者不写都一样，因为默认值就是 source-over。
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // source-in 新图形只在旧图形和新图形重叠的部分显示。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'source-in'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // source-out 新图形只在与旧图形不重叠的部分显示。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'source-out'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // source-atop 新图形只在与旧图形重叠的部分显示，且这部分会显示在旧图形之上。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'source-atop'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // destination-over 新图形会绘制在旧图形的下方。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'destination-over'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // destination-in 旧图形只在与新图形重叠的部分显示。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'destination-in'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // destination-out 旧图形只在与新图形不重叠的部分显示。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'destination-out'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // destination-atop 旧图形只在与新图形重叠的部分显示，且这部分会显示在新图形之上。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'destination-atop'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // copy 只显示新图形，忽略旧图形。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'copy'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+
+      // xor 只显示新图形和旧图形不重叠的部分。
+      {
+        const canvas = document.createElement('canvas')
+        canvas.width = 200
+        canvas.height = 200
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(10, 10, 100, 100)
+
+        ctx.globalCompositeOperation = 'xor'
+
+        ctx.fillStyle = 'red'
+        ctx.fillRect(50, 50, 100, 100)
+      }
+    </script>
+  </body>
+</html>

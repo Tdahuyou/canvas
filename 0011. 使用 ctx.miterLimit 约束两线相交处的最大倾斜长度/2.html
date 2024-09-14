@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      cavnas.width = 500
+      cavnas.height = 500
+      document.body.appendChild(cavnas)
+
+      drawGrid(cavnas, 500, 500, 50)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      ctx.lineWidth = 100
+      ctx.lineJoin = 'miter'
+      ctx.strokeStyle = 'blue'
+
+      ctx.moveTo(100, 100)
+      ctx.lineTo(100, 400)
+      ctx.lineTo(400, 400)
+      ctx.miterLimit = Math.sqrt(2)
+      ctx.stroke()
+
+      /*
+      上面描述了一种特殊的情况，此时 miterLength 比较好计算
+      lineWidth = 100
+      miterLength = Math.sqrt(lineWidth^2 + lineWidth^2)
+      miterLimit = miterLength / lineWidth = Math.sqrt(2)
+
+      现在是否要将尖角切为平角，就看我们设置的 miterLimit 的阈值是多少了。
+      miterLimit 值越大 -> 尖角越尖
+      如果你觉得这个角太尖了，要切为平角，那么 miterLimit 设置的比 Math.sqrt(2) 小就可以了。
+      如果你觉得这个角不会太尖，不需要切，那么 miterLimit 设置的比 Math.sqrt(2) 大就可以了。
+        默认值是 10，所以默认情况下，不会切角。
+      */
+    </script>
+  </body>
+</html>

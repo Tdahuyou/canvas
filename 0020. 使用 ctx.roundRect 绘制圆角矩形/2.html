@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      ctx.roundRect(100, 100, 200, 200, 100)
+      // 100 100 表示矩形左上角的坐标
+      // 200 200 表示矩形的宽高
+      // 100 表示圆角的大小 —— 此时将绘制一个圆形
+      ctx.fill()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 400, 400, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      ctx.shadowColor = '#888' // 阴影的颜色为灰色
+      ctx.shadowBlur = 15
+
+      // shadowOffsetX 和 shadowOffsetY 属性用于设置阴影的偏移量。
+      ctx.shadowOffsetX = 8
+      ctx.shadowOffsetY = 8
+
+      // 创建一个径向渐变
+      const gradient = ctx.createRadialGradient(170, 170, 30, 200, 200, 100)
+      // 170, 170, 30 表示渐变的起点是一个圆心为 (170, 170) 半径为 30 的圆。
+      // 200, 200, 100 表示渐变的终点是一个圆心为 (200, 200) 半径为 100 的圆。
+      gradient.addColorStop(0, 'rgb(221, 0, 0)') // 开始位置更亮红
+      gradient.addColorStop(1, 'rgb(136, 0, 0)') // 结束位置更黑红
+
+      ctx.fillStyle = gradient
+      ctx.arc(200, 200, 100, 0, Math.PI * 2)
+      ctx.fill()
+
+      // 模拟场景：
+      // 光源在左上角，阴影在右下角。
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        margin: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script src="./createCanvas.js"></script>
+    <script>
+      // 原图
+      createCanvas()
+      
+      // ctx.filter = 'invert(1)'
+
+      // 该函数将所有颜色的值反转，例如黑变白，白变黑，以及其他颜色的相对反色。
+      // 这种滤镜可以创建具有强烈视觉对比效果的图像，常用于特殊视觉效果或辅助功能（比如夜间模式或视觉障碍模式）。
+
+      // 设置反色
+      // 0   表示原样
+      // 0.5 表示灰色
+      // 1   表示颜色取反
+      createCanvas('invert(0)')
+      createCanvas('invert(0.5)')
+      createCanvas('invert(1)')
+    </script>
+  </body>
+</html>

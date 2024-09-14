@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const canvas = document.createElement('canvas')
+      canvas.width = 800
+      canvas.height = 800
+      document.body.append(canvas)
+
+      const ctx = canvas.getContext('2d')
+
+      const img = new Image()
+      img.src = './home.png'
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0)
+
+        const imageData = ctx.getImageData(0, 0, img.width, img.height)
+        for (let i = 0; i < imageData.data.length; i += 4) {
+          const r = imageData.data[i]
+          const g = imageData.data[i + 1]
+          const b = imageData.data[i + 2]
+
+          // 图像反色处理
+          imageData.data[i] = 255 - r
+          imageData.data[i + 1] = 255 - g
+          imageData.data[i + 2] = 255 - b
+        }
+        ctx.putImageData(imageData, 0, 0)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        border: 1px solid #888;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      // ctx.createLinearGradient 方法是 Canvas API 中用于创建线性渐变对象的函数。
+
+      // 接受四个参数：x0, y0, x1, y1
+      // 分别代表渐变的起点 (x0, y0) 和终点 (x1, y1) 的坐标。
+      // 会按照两点的连线方向渐变。
+      // 可以是横向、纵向、斜向。
+
+      // 注意：
+      // 渐变的参考系是画布坐标系。
+      // 位置不会随着图形的变化而变化。
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 200, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.globalAlpha = 0.8
+
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
+        gradient.addColorStop(0, 'red') // 表示渐变的起点颜色为红色
+        gradient.addColorStop(0.5, 'green') // 表示渐变的中间（50% 位置）颜色为绿色
+        gradient.addColorStop(1, 'blue') // 表示渐变的终点颜色为蓝色
+
+        ctx.fillStyle = gradient
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+      }
+
+      // 仅修改矩形的尺寸和位置观察渐变效果。
+      // 会发现渐变是固定的，矩形位置和尺寸仅仅决定了展示哪一部分的渐变效果。
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 200, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.globalAlpha = 0.8
+
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
+        gradient.addColorStop(0, 'red')
+        gradient.addColorStop(0.5, 'green')
+        gradient.addColorStop(1, 'blue')
+
+        ctx.fillStyle = gradient
+        ctx.fillRect(200, 0, 100, canvas.height)
+      }
+
+      {
+        const canvas = document.createElement('canvas')
+        drawGrid(canvas, 500, 200, 50)
+        document.body.append(canvas)
+        const ctx = canvas.getContext('2d')
+
+        ctx.globalAlpha = 0.8
+
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0)
+        gradient.addColorStop(0, 'red')
+        gradient.addColorStop(0.5, 'green')
+        gradient.addColorStop(1, 'blue')
+
+        ctx.fillStyle = gradient
+        ctx.fillRect(400, 0, 100, canvas.height)
+      }
+
+    </script>
+  </body>
+</html>

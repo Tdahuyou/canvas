@@ -1,0 +1,6 @@
+canvas {
+  border: 2px solid #ccc;
+
+  /* 让两个 canvas 重合在一起 */
+  position: absolute;
+}

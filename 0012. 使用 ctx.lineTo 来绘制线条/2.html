@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      // 画一个 Z 字形
+      ctx.moveTo(100, 100)
+
+      // 经过下面这些点，画出一个 Z 字形
+      ctx.lineTo(200, 100)
+      ctx.lineTo(100, 200)
+      ctx.lineTo(200, 200)
+
+      ctx.stroke()
+    </script>
+  </body>
+</html>

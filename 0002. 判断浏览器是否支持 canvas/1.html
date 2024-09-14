@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+      绝大多数的浏览器都支持 canvas
+      少数老版本的浏览器不支持（比如版本低于 9 的 IE 浏览器）
+
+      可以通过下面这两种方式来判断浏览器是否支持 canvas：
+      1. 浏览器如果不认识 canvas，会显示 canvas 标签中的内容。
+      2. 通过检查 canvas 元素的 getContext 方法是否存在来检测浏览器是否支持 canvas。
+     -->
+    <canvas>
+      您的浏览器版本过低，不支持canvas，请升级浏览器或更换浏览器
+    </canvas>
+
+    <script>
+      // 通过 JS 来检查浏览器是否支持 canvas
+      // 通过检查 canvas 元素的 getContext 方法是否存在来检测浏览器是否支持 canvas。
+      function checkCanvasSupport() {
+        var canvas = document.createElement('canvas') // 创建一个canvas元素
+        return !!canvas.getContext // 检查getContext方法是否存在
+      }
+
+      if (checkCanvasSupport()) {
+        console.log('浏览器支持canvas')
+      } else {
+        console.log('浏览器不支持canvas')
+      }
+    </script>
+  </body>
+</html>

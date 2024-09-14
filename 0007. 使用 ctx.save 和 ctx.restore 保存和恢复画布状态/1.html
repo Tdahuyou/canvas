@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const canvas = document.createElement('canvas')
+      drawGrid(canvas, 200, 450, 50)
+      document.body.append(canvas)
+      const ctx = canvas.getContext('2d')
+
+      ctx.beginPath()
+      ctx.globalAlpha = .8
+
+      ctx.fillRect(50, 50, 100, 50)
+
+      ctx.save() // 保存初始状态【黑色填充】
+
+      ctx.fillStyle = 'red'
+      ctx.fillRect(50, 100, 100, 50)
+
+      ctx.save() // 保存状态 1【红色填充】
+
+      ctx.fillStyle = 'green'
+      ctx.fillRect(50, 150, 100, 50)
+
+      ctx.save() // 保存状态 2【绿色填充】
+
+      ctx.fillStyle = 'blue'
+      ctx.fillRect(50, 200, 100, 50)
+
+      ctx.restore()
+      // 恢复到最近一次保存的状态，也就是状态 2，此时的填充颜色为绿色
+      ctx.fillRect(50, 250, 100, 50)
+
+      ctx.restore()
+      // 再次恢复到最近一次保存的状态，也就是状态 1，此时的填充颜色为红色
+      ctx.fillRect(50,  300, 100, 50)
+
+      ctx.restore()
+      // 再次恢复到最近一次保存的状态，也就是初始状态，此时的填充颜色为黑色
+      ctx.fillRect(50,  350, 100, 50)
+    </script>
+  </body>
+</html>

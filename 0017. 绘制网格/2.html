@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+      drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath()
+
+      // 前面的 canvas 画布初始化逻辑基本不会变化，在接下来的学习中直接搬运即可。
+      // 后续如果要学习绘制新的图形，直接接着写往后写就行。
+      // 前面绘制的网格，主要作为参考坐标系，以便更直观地查看坐标。
+      ctx.fillRect(100, 100, 200, 100)
+    </script>
+  </body>
+</html>

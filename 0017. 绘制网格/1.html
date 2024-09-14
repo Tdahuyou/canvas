@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./drawGrid.js"></script>
+    <script>
+      const cavnas = document.createElement('canvas')
+
+      // 创建好 canvas 之后，直接调用 drawGrid 函数绘制参考网格。
+      drawGrid(cavnas, 500, 500, 50)
+      // 表示绘制一个 500 * 500 的网格，每个网格的尺寸是 50。
+
+      document.body.appendChild(cavnas)
+      const ctx = cavnas.getContext('2d')
+      ctx.beginPath() // 路径分组，以防后续的绘制操作影响到之前绘制的网格。
+    </script>
+  </body>
+</html>
