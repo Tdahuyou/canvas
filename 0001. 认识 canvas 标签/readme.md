@@ -2,6 +2,8 @@
 
 - 本节介绍了 canvas 的一些基本特性。通过一个简单的小示例，绘制一个矩形，来初步了解一下 canvas 的基本使用。
 - 介绍了 canvas 技术的一些应用场景。简单了解一下 canvas 这玩意儿能用来做些什么东西。
+- 了解 Image 和 Graphic 之间的区别
+- 了解 svg 和 canvas 之间的区别
 
 ## 📝 canvas 概述
 
