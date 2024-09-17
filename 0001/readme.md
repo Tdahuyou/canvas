@@ -155,19 +155,17 @@ Canvas 可以用来处理和修改视频内容，如视频特效、实时视频�
 
 svg 的 demos 可以看看 [snapsvg demos](http://snapsvg.io/demos/)
 
-![](md-imgs/2024-09-18-06-41-43.png)
-
-
+![](md-imgs/2024-09-18-06-46-41.png)
 
 canvas 的 demos 可以看看 [4399 小游戏](https://www.4399.com/)。
 
-![](md-imgs/2024-09-18-06-41-49.png)
+![](md-imgs/2024-09-18-06-46-53.png)
 
 4399 中的小游戏，大多也都是通过 canvas 来制作的。
 
 再比如 [echarts demos](https://echarts.apache.org/examples/zh/index.html#chart-type-line)
 
-![](md-imgs/2024-09-18-06-41-56.png)
+![](md-imgs/2024-09-18-06-47-02.png)
 
 > <font style="color:rgb(29, 29, 31);">这里补充一嘴，实际上 echarts 图表，支持两种渲染模式 svg、canvas。默认情况下使用的是 canvas 来渲染。这样说明了一点，很多图形 svg、canvas 都可以绘制，并不是说某种图形就一定得使用某种技术来实现。</font>
 >
