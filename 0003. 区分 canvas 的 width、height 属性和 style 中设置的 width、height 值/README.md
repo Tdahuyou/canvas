@@ -1,3 +1,5 @@
+# 0003. 区分 canvas 的 width、height 属性和 style 中设置的 width、height 值
+
 在设置画布尺寸的时候，直接设置 canvas 的 width、height 属性值，不要通过 css 来设置 width、height。
 
 - 【推荐】直接设置 canvas 的 wdith 和 height：<canvas width="400" height="400"></canvas>
