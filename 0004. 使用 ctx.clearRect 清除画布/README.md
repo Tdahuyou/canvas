@@ -2,13 +2,13 @@
 
 ## 📝 notes
 
-需要理解 ctx.clearRect 清除画布的本质是让指定区域 透明，而非真的将路径给擦掉了。
+需要理解 ctx.clearRect 清除画布的本质是让指定区域 **透明**，而非真的将路径给擦掉了。
 
 ---
 
 **理解擦除的本质**
 
-ctx.clearRect(x, y, width, height) 用于在 canvas 上清除指定的矩形区域，使该区域完全透明。
+`ctx.clearRect(x, y, width, height)` 用于在 canvas 上清除指定的矩形区域，使该区域完全透明。
 
 ---
 
