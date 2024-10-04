@@ -10,7 +10,6 @@
 - https://github.com/Tdahuyou/canvas - GitHub - Canvas 代码仓库。
 
 ```bash
-# git
 # 一键克隆最新版的代码
 git clone https://github.com/Tdahuyou/canvas.git
 ```
@@ -29,30 +28,14 @@ git clone https://github.com/Tdahuyou/canvas.git
 
 - https://juejin.cn/post/7116784455561248775 - Canvas 从入门到劝朋友放弃（图解版）。
 
-![](md-imgs/2024-10-04-10-46-36.png)
-
 ### html5canvas tutorials
 
 - https://www.html5canvastutorials.com/ - html5canvas tutorials。
-
-目录如下：
-
-![](md-imgs/2024-10-04-10-45-50.png)
 
 ### MDN Canvas tutorial
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial - MDN Canvas tutorial
 
-目录：
-
-![](md-imgs/2024-10-04-10-47-38.png)
-
 ### HTML Canvas Deep Dive
 
 - https://joshondesign.com/p/books/canvasdeepdive/title.html - HTML Canvas Deep Dive - 介绍了 Canvas API 和 WebGL。
-
-目录：
-
-![](md-imgs/2024-10-04-10-48-47.png)
-
-![](md-imgs/2024-10-04-10-48-53.png)
