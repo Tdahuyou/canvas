@@ -158,10 +158,13 @@ animate()
 ## 📝 notes - 烟花 - 爆炸过程分析
 
 **烟花的爆炸原理分析：**
+
 爆炸后的烟花，本质上就是绘制若干个小球，小球的数量由 `this.particleCount` 变量来表示。所有爆炸的粒子实例存储在 `this.particles` 数组中，每次更新烟花 `Firework.update()` 的时候需要去绘制俩玩意儿：
 1. 还没爆炸的烟花 `Firework.activeFireworks`
 2. 已经爆炸的烟花 `Firework.explodeFireworks`
+
 还没爆炸的烟花，绘制逻辑就是前面提到的烟花上升逻辑，保持不变即可。
+
 爆炸后的烟花，需要将烟花实例存储到 `Firework.explodeFireworks` 中，然后遍历所有已经爆炸的烟花实例，创建爆炸粒子、更新爆炸粒子的状态。
 
 ## 💻 demo - 实现爆炸过程
