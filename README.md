@@ -1,9 +1,5 @@
 # Canvas 学习笔记
 
-## ⏰ todos
-
-- [ ] 将语雀中的笔记内容给搬运到对应目录下的 readme.md 中，搬运完毕后将语雀上的笔记给删除掉。其它技术栈的内容分享也按照这种形式来走，将语雀上记录的笔记给逐步搬运到 GitHub 上。语雀中分享的内容，只需要提供一个视频指引加对应的 Github 仓库的链接即可。
-
 ## 🔗 links
 
 - https://www.yuque.com/huyouda/programming-public - 语雀在线笔记 - 存储一些静态资源，比如笔记中的图片，以便二次编辑。
@@ -14,7 +10,7 @@
 git clone https://github.com/Tdahuyou/canvas.git
 ```
 
-## 📝 Canvas 在线教程
+## 🔗 links - Canvas 在线教程
 
 这部分记录的是在自学 Canvas 时的一些参考资料。
 
