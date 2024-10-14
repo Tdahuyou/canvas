@@ -1,6 +1,6 @@
 # 0033. 使用 ctx.drawImage 绘制视频图像
 
-## 📝 notes
+## 📒 notes
 
 可以使用 ctx.drawImage 来处理视频图像，这个功能点有些 🐂 🍺，水应该蛮深的。
 

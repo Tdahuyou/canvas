@@ -9,7 +9,7 @@
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowBlur
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowColor
 
-## 📝 notes
+## 📒 notes
 
 shadowColor 设置阴影的颜色。
 

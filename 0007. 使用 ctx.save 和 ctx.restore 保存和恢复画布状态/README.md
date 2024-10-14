@@ -2,7 +2,7 @@
 
 画笔状态的存储和恢复还是比较常见的操作，需要掌握一些常见的写法。
 
-## 📝 notes
+## 📒 notes
 
 [ctx.save()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/save) 和 [ctx.restore()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/restore) 方法用于保存和恢复画布（Canvas）的状态。
 

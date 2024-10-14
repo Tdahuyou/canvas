@@ -11,7 +11,7 @@
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData - MDN - CanvasRenderingContext2D: getImageData() method，读图片数据。
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData - MDN - CanvasRenderingContext2D: putImageData() method，写图片数据。
 
-## 📝 notes
+## 📒 notes
 
 ctx.getImageData、ctx.putImageData 这俩 API 的功能很强大，能玩出很多效果 —— 因为拿到了整个图像的所有像素点数据。
 

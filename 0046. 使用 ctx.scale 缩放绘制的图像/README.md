@@ -6,7 +6,7 @@ ctx.scale 用于在画布上缩放绘制的图像。通过传入负数，还能�
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale - MDN - CanvasRenderingContext2D：scale() 方法
 
-## 📝 notes
+## 📒 notes
 
 ctx.scale 用于在画布上缩放绘制的图像。
 

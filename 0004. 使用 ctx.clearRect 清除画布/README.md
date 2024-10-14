@@ -1,6 +1,6 @@
 # 0004. 使用 ctx.clearRect 清除画布
 
-## 📝 notes
+## 📒 notes
 
 需要理解 ctx.clearRect 清除画布的本质是让指定区域 **透明**，而非真的将路径给擦掉了。
 
