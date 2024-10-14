@@ -5,7 +5,7 @@
 - [TODO](./TODO.md)
   - **待办清单，记录代办事项。**
   - **根据知识点对笔记进行了分类，方便查找，可以作为目录参考。**
-- https://www.yuque.com/huyouda/programming-public
+- https://www.yuque.com/huyouda/notes
   - 语雀在线笔记。
   - 存储一些静态资源，比如笔记中的图片，以便二次编辑。
 - https://github.com/Tdahuyou/canvas
