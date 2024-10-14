@@ -2,7 +2,7 @@
 
 - 学会使用 `ctx.fillRect()` 来绘制一个填充矩形。
 
-## 📝 notes
+## 📒 notes
 
 `ctx.fillRect(x, y, width, height)`
 - `(x, y)` 表示从哪个点开始绘制；

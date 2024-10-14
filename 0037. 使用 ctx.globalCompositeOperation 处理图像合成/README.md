@@ -8,7 +8,7 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation - MDN - ctx.globalCompositeOperation
 
-## 📝 notes
+## 📒 notes
 
 `ctx.globalCompositeOperation` 用于设置如何将新绘制的图像与已存在的画布内容合成，决定新图像如何与底层内容相结合。
 

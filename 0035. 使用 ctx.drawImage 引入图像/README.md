@@ -12,7 +12,7 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage - MDN - `ctx.drawImage`
 
-## 📝 notes
+## 📒 notes
 
 `ctx.drawImage` 常见有 3 种写法：
 

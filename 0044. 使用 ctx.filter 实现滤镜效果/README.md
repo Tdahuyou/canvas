@@ -8,7 +8,7 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter - MDN - ctx.filter。
 
-## 📝 notes
+## 📒 notes
 
 ctx.filter 用于设置滤镜效果，跟 css 中的滤镜语法、功能都非常类似。
 

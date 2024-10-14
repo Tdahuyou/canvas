@@ -1,6 +1,6 @@
 # 0014. 使用 ctx.fillText、ctx.strokeText 绘制文本
 
-## 📝 notes
+## 📒 notes
 
 `ctx.fillText` 绘制填充文本。
 

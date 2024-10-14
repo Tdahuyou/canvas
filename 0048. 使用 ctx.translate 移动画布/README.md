@@ -6,7 +6,7 @@ ctx.translate 用于移动画布和其原点到一个新的位置。
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/translate - MDN - CanvasRenderingContext2D：translate() 方法
 
-## 📝 notes
+## 📒 notes
 
 ctx.translate 用于移动画布和其原点到一个新的位置。
 

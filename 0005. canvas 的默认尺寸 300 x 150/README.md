@@ -2,7 +2,7 @@
 
 - 知道 `<canvas>` 默认是 300x150 的行盒。
 
-## 📝 notes
+## 📒 notes
 
 如果你仅仅创建了一个 canvas，但是并没有指定它的 width、height，那么这个 canvas 的默认尺寸是 300x150。
 

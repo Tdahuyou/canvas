@@ -6,7 +6,7 @@ ctx.transform 很强大，可以实现很多转换效果，难点在于计算坐
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/transform - MDN - CanvasRenderingContext2D：transform() 方法
 
-## 📝 notes
+## 📒 notes
 
 ctx.transform 很强大，可以实现很多转换效果。但是这玩意儿的参数值需要根据具体的转换效果来挨个计算。
 

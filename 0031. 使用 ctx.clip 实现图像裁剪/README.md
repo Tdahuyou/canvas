@@ -13,7 +13,7 @@ ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解�
 - https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule - Wiki - Even–odd rule
 - https://en.wikipedia.org/wiki/Nonzero-rule - Wiki - Nonzero-rule
 
-## 📝 notes
+## 📒 notes
 
 `ctx.clip` 用来裁剪图像，难点在于理解填充规则。
 

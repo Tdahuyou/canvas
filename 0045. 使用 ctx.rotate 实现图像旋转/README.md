@@ -4,7 +4,7 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate - MDN - CanvasRenderingContext2D：rotate() 方法。
 
-## 📝 notes
+## 📒 notes
 
 ctx.rotate 用于旋转画布的当前绘图。
 

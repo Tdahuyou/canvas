@@ -1,6 +1,6 @@
 # 0010. 使用 ctx.setLineDash 设置虚线
 
-## 📝 notes
+## 📒 notes
 
 学会使用 `ctx.setLineDash` 设置虚线，它会根据我们传入的参数数量不同，选择使用不同的行为来设置虚线之间的间隙。
 
