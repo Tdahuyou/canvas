@@ -1,15 +1,17 @@
 # 0001. 认识 canvas 标签
 
+## 📝 summary
+
 - 本节介绍了 canvas 的一些基本特性。通过一个简单的小示例，绘制一个矩形，来初步了解一下 canvas 的基本使用。
 - 介绍了 canvas 技术的一些应用场景。简单了解一下 canvas 这玩意儿能用来做些什么东西。
 - 了解 Image 和 Graphic 之间的区别
 - 了解 svg 和 canvas 之间的区别
 
-## 📝 canvas 概述
+## 📒 notes - canvas 概述
 
 `<canvas>` 是 **HTML5** 中引入的一个元素，它允许你在网页上绘制图形，这些图形可以是 **2D** 或 **3D** （使用 WebGL）。**`<canvas>` 元素本身只是一个容器，实际的绘制需要使用 JavaScript 来完成。**
 
-## 📝 canvas 基本使用
+## 📒 notes - canvas 基本使用
 
 
 ```html
@@ -74,7 +76,7 @@ ctx.fillRect(10, 10, 50, 50)
 - svg 是基于 xml 的，它类似与 html，是有 DOM 结构的。
 - canvas 的绘图这是基于 JavaScript 来控制，我们定义的 canvas 标签，仅仅是提供一个画布，绘制的内容是不存在对应的 DOM 节点的。
 
-## 📝 canvas 基本特性
+## 📒 notes - canvas 基本特性
 
 - **像素基础**：Canvas 是基于 **像素** 的，你可以通过 JavaScript 控制每一个像素。
 - **动态图形**：Canvas 非常适合 **动态** 生成的图形，如 **游戏**、**图形处理** 和其他需要大量 **动态视觉效果** 的应用。
@@ -85,7 +87,7 @@ ctx.fillRect(10, 10, 50, 50)
 
 由于其依赖 JavaScript 进行绘图，这为开发者提供了极大的灵活性，但同时也意味着它可能不如 SVG 那样适合 **搜索引擎优化** 或简单的图形显示。
 
-## 📝 canvas 应用场景
+## 📒 notes - canvas 应用场景
 
 `<canvas>` 元素主要用来解决需要动态、复杂渲染以及高度可交互的图形场景的问题。
 
@@ -125,7 +127,7 @@ Canvas 可以用来处理和修改视频内容，如视频特效、实时视频�
 
 在教育软件中，尤其是需要动态展示和交互式学习的场景，如物理实验模拟、生物结构展示等，Canvas 提供了一种有效的实现方式。
 
-## 📝 对比 svg 和 canvas
+## 📒 notes - 对比 svg 和 canvas
 
 文中提供了一张表格，记录了这俩玩意儿之间的一些差异。可以等学完了 svg、canvas 的内容之后再来回看这篇文档中提到的内容。
 
@@ -172,7 +174,7 @@ canvas 的 demos 可以看看 [4399 小游戏](https://www.4399.com/)。
 > <font style="color:rgb(29, 29, 31);">这里补充一嘴，实际上 echarts 图表，支持两种渲染模式 svg、canvas。默认情况下使用的是 canvas 来渲染。这样说明了一点，很多图形 svg、canvas 都可以绘制，并不是说某种图形就一定得使用某种技术来实现。</font>
 >
 
-## 🤖 对比 svg 和 canvas
+## 🤖 ai - 对比 svg 和 canvas
 
 
 SVG（Scalable Vector Graphics）和 Canvas 是两种流行的图形处理技术，它们各有特点，并适用于不同的应用场景。以下是它们的主要对比：
@@ -225,7 +227,7 @@ SVG（Scalable Vector Graphics）和 Canvas 是两种流行的图形处理技术
 - 如果你需要高质量的图形，如图标和矢量图，且希望它们具有良好的缩放性和可访问性，那么SVG可能是更好的选择。
 - 如果你的项目涉及到复杂的动画、游戏或需要大量动态图形处理，Canvas将可能提供更好的性能和灵活性。
 
-## 📝 区分 Image 和 Graphic
+## 📒 notes - 区分 Image 和 Graphic
 
 Image 和 Graphic 理解这俩词的区别，对于理解 svg 和 canvas 的差异有所帮助。
 
