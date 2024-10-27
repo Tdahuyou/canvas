@@ -174,7 +174,7 @@ canvas 的 demos 可以看看 [4399 小游戏](https://www.4399.com/)。
 > <font style="color:rgb(29, 29, 31);">这里补充一嘴，实际上 echarts 图表，支持两种渲染模式 svg、canvas。默认情况下使用的是 canvas 来渲染。这样说明了一点，很多图形 svg、canvas 都可以绘制，并不是说某种图形就一定得使用某种技术来实现。</font>
 >
 
-## 🤖 ai - 对比 svg 和 canvas
+## 🤖 AI - 对比 svg 和 canvas
 
 
 SVG（Scalable Vector Graphics）和 Canvas 是两种流行的图形处理技术，它们各有特点，并适用于不同的应用场景。以下是它们的主要对比：
