@@ -1,4 +1,4 @@
-# 0034. 使用 ctx.drawImage 实现人物奔跑动画效果
+# [0034. 使用 ctx.drawImage 实现人物奔跑动画效果](https://github.com/Tdahuyou/canvas/tree/main/0034.%20%E4%BD%BF%E7%94%A8%20ctx.drawImage%20%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%89%A9%E5%A5%94%E8%B7%91%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C)
 
 - 能够理解任务的运动原理即可，本质上使用的是 `ctx.drawImage` 的“截图”功能。
 

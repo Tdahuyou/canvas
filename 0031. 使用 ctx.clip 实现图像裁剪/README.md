@@ -1,4 +1,4 @@
-# 0031. 使用 ctx.clip 实现图像裁剪
+# [0031. 使用 ctx.clip 实现图像裁剪](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA)
 
 ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解，并且暂时也还不清楚填充规则有何实际的应用场景……
 

@@ -1,4 +1,4 @@
-# 0023. 使用 ctx.beginPath 方法对路径进行分组
+# [0023. 使用 ctx.beginPath 方法对路径进行分组](https://github.com/Tdahuyou/canvas/tree/main/0023.%20%E4%BD%BF%E7%94%A8%20ctx.beginPath%20%E6%96%B9%E6%B3%95%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%BF%9B%E8%A1%8C%E5%88%86%E7%BB%84)
 
 - 学会使用 `ctx.beginPath()` 对路径进行分组，并了解如果不使用分组的话，会存在什么潜在问题。
 

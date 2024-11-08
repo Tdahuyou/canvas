@@ -1,4 +1,4 @@
-# 0049. 模拟烟花效果
+# [0049. 模拟烟花效果](https://github.com/Tdahuyou/canvas/tree/main/0049.%20%E6%A8%A1%E6%8B%9F%E7%83%9F%E8%8A%B1%E6%95%88%E6%9E%9C)
 
 理解文档中提到的烟花效果的实现原理。
 

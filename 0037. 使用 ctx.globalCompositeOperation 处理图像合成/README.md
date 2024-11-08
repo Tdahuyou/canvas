@@ -1,4 +1,4 @@
-# 0037. 使用 ctx.globalCompositeOperation 处理图像合成
+# [0037. 使用 ctx.globalCompositeOperation 处理图像合成](https://github.com/Tdahuyou/canvas/tree/main/0037.%20%E4%BD%BF%E7%94%A8%20ctx.globalCompositeOperation%20%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F%E5%90%88%E6%88%90)
 
 理解单词 source（源）和目标 destination（目标）的含义，有助于对 `ctx.globalCompositeOperation` 的相关属性值（`source-over`、`destination-in`……）的理解。
 

@@ -1,4 +1,4 @@
-# 0024. 使用 ctx.arc 绘制圆弧
+# [0024. 使用 ctx.arc 绘制圆弧](https://github.com/Tdahuyou/canvas/tree/main/0024.%20%E4%BD%BF%E7%94%A8%20ctx.arc%20%E7%BB%98%E5%88%B6%E5%9C%86%E5%BC%A7)
 
 - 学会使用 `ctx.arc` 绘制圆弧，可以根据文档中提供的图来理解绘制原理。
 - 知道角度和弧度之间的区别，清楚它们俩之间的转换关系。

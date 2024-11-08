@@ -1,4 +1,4 @@
-# 0032. 使用 ctx.createPattern 创建填充图案
+# [0032. 使用 ctx.createPattern 创建填充图案](https://github.com/Tdahuyou/canvas/tree/main/0032.%20%E4%BD%BF%E7%94%A8%20ctx.createPattern%20%E5%88%9B%E5%BB%BA%E5%A1%AB%E5%85%85%E5%9B%BE%E6%A1%88)
 
 - 理解 ctx.createPattern 的填充机制。
 

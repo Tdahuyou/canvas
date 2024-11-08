@@ -1,4 +1,4 @@
-# 0004. 使用 ctx.clearRect 清除画布
+# [0004. 使用 ctx.clearRect 清除画布](https://github.com/Tdahuyou/canvas/tree/main/0004.%20%E4%BD%BF%E7%94%A8%20ctx.clearRect%20%E6%B8%85%E9%99%A4%E7%94%BB%E5%B8%83)
 
 ## 📒 notes
 

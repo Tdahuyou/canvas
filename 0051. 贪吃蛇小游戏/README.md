@@ -1,4 +1,4 @@
-# 0051. 贪吃蛇小游戏
+# [0051. 贪吃蛇小游戏](https://github.com/Tdahuyou/canvas/tree/main/0051.%20%E8%B4%AA%E5%90%83%E8%9B%87%E5%B0%8F%E6%B8%B8%E6%88%8F)
 
 理解贪吃蛇小游戏的实现的基本原理。
 

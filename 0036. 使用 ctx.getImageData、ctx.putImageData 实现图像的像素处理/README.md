@@ -1,4 +1,4 @@
-# 0036. 使用 ctx.getImageData、ctx.putImageData 实现图像的像素处理
+# [0036. 使用 ctx.getImageData、ctx.putImageData 实现图像的像素处理](https://github.com/Tdahuyou/canvas/tree/main/0036.%20%E4%BD%BF%E7%94%A8%20ctx.getImageData%E3%80%81ctx.putImageData%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E5%83%8F%E7%B4%A0%E5%A4%84%E7%90%86)
 
 先对 `ctx.getImageData`、`ctx.putImageData` 的使用有个基本的了解即可。想要玩 6️⃣ 它们，还需要去学习图像颜色处理的更多知识。
 文档中提到的示例，处理逻辑都是：

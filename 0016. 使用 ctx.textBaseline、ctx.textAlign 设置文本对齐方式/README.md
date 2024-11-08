@@ -1,4 +1,4 @@
-# 0016. 使用 ctx.textBaseline、ctx.textAlign 设置文本对齐方式
+# [0016. 使用 ctx.textBaseline、ctx.textAlign 设置文本对齐方式](https://github.com/Tdahuyou/canvas/tree/main/0016.%20%E4%BD%BF%E7%94%A8%20ctx.textBaseline%E3%80%81ctx.textAlign%20%E8%AE%BE%E7%BD%AE%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F)
 
 - ctx.textBaseline 设置文本的 **垂直** 对齐方式
 - ctx.textAlign 设置文本的 **水平** 对齐方式

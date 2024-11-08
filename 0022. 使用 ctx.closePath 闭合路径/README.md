@@ -1,4 +1,4 @@
-# 0022. 使用 ctx.closePath 闭合路径
+# [0022. 使用 ctx.closePath 闭合路径](https://github.com/Tdahuyou/canvas/tree/main/0022.%20%E4%BD%BF%E7%94%A8%20ctx.closePath%20%E9%97%AD%E5%90%88%E8%B7%AF%E5%BE%84)
 
 了解手动闭合和自动闭合之间的区别。通过示例，了解路径如果没有设置自动闭合的话，可能会导致什么问题。
 

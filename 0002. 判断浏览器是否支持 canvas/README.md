@@ -1,4 +1,4 @@
-# 0002. 判断浏览器是否支持 canvas
+# [0002. 判断浏览器是否支持 canvas](https://github.com/Tdahuyou/canvas/tree/main/0002.%20%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%20canvas)
 
 - 掌握判断浏览器是否支持 canvas 的两种方式。
 

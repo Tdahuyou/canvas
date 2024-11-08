@@ -1,4 +1,4 @@
-# 0007. 使用 ctx.save 和 ctx.restore 保存和恢复画布状态
+# [0007. 使用 ctx.save 和 ctx.restore 保存和恢复画布状态](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81)
 
 画笔状态的存储和恢复还是比较常见的操作，需要掌握一些常见的写法。
 

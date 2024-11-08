@@ -1,4 +1,4 @@
-# 0043. 给图像添加阴影
+# [0043. 给图像添加阴影](https://github.com/Tdahuyou/canvas/tree/main/0043.%20%E7%BB%99%E5%9B%BE%E5%83%8F%E6%B7%BB%E5%8A%A0%E9%98%B4%E5%BD%B1)
 
 跟 css 中的 box-shadow 类似，都可以用于给盒子添加阴影。在 canvas 中，可以给阴影添加颜色ctx.shadowColor、模糊半径shadowBlur、偏移shadowOffsetX、shadowOffsetY。
 

@@ -1,4 +1,4 @@
-# 0042. 使用 ctx.createRadialGradient 实现径向渐变效果
+# [0042. 使用 ctx.createRadialGradient 实现径向渐变效果](https://github.com/Tdahuyou/canvas/tree/main/0042.%20%E4%BD%BF%E7%94%A8%20ctx.createRadialGradient%20%E5%AE%9E%E7%8E%B0%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%98%E6%95%88%E6%9E%9C)
 
 ctx.createRadialGradient 用于创建径向渐变（或称为放射状渐变）。
 

@@ -1,4 +1,4 @@
-# 0025. 使用 ctx.quadraticCurveTo、ctx.bezierCurveTo 绘制贝塞尔曲线
+# [0025. 使用 ctx.quadraticCurveTo、ctx.bezierCurveTo 绘制贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF)
 
 - 重点在于理解贝塞尔曲线的绘制原理。理解原理后，自然就理解这俩 API 应该如何使用了。
 
