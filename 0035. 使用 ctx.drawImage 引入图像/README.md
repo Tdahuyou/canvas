@@ -1,11 +1,9 @@
 # [0035. 使用 ctx.drawImage 引入图像](https://github.com/Tdahuyou/canvas/tree/main/0035.%20%E4%BD%BF%E7%94%A8%20ctx.drawImage%20%E5%BC%95%E5%85%A5%E5%9B%BE%E5%83%8F)
 
 一共有 3 种传参方式：
-
 1. `drawImage(image, dx, dy)`
 2. `drawImage(image, dx, dy, dWidth, dHeight)`
 3. `drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)`
-
 最后一种能用来模拟截图效果。
 
 ## 🔗 links

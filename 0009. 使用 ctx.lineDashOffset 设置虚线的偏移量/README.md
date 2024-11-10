@@ -1,5 +1,6 @@
 # [0009. 使用 ctx.lineDashOffset 设置虚线的偏移量](https://github.com/Tdahuyou/canvas/tree/main/0009.%20%E4%BD%BF%E7%94%A8%20ctx.lineDashOffset%20%E8%AE%BE%E7%BD%AE%E8%99%9A%E7%BA%BF%E7%9A%84%E5%81%8F%E7%A7%BB%E9%87%8F)
 
+
 ## 📒 notes
 
 `lineDashOffset` 这个属性常用于实现线条相关的动画效果。有不少跟 **线条移动相关的动画**，就是使用这个属性来实现的。

@@ -1,11 +1,9 @@
 # [0042. 使用 ctx.createRadialGradient 实现径向渐变效果](https://github.com/Tdahuyou/canvas/tree/main/0042.%20%E4%BD%BF%E7%94%A8%20ctx.createRadialGradient%20%E5%AE%9E%E7%8E%B0%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%98%E6%95%88%E6%9E%9C)
 
 ctx.createRadialGradient 用于创建径向渐变（或称为放射状渐变）。
-
 `createRadialGradient(x0, y0, r0, x1, y1, r1)`
 - `x0, y0, r0` 圆1
 - `x1, y1, r1` 圆2
-
 从圆 1 的边缘开始渐变到圆 2 的边缘。
 
 ## 🔗 links

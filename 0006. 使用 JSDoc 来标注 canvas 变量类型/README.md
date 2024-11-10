@@ -1,7 +1,6 @@
 # [0006. 使用 JSDoc 来标注 canvas 变量类型](https://github.com/Tdahuyou/canvas/tree/main/0006.%20%E4%BD%BF%E7%94%A8%20JSDoc%20%E6%9D%A5%E6%A0%87%E6%B3%A8%20canvas%20%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)
 
 本节介绍的内容是 —— 如何在 IDE 中获取更友好地 canvas 相关的 API 智能提示问题。
-
 - 【示例 2】如果想要获取到 IDE 的智能提示，有些教程中的做法是推荐你使用 createElement 的方式来创建 canvas，这么做的目的是为了获取到更有好的智能提示。
 - 【示例 1】而如果你页面上如果已经有了 canvas 标签，然后你通过查询的方式找到这个标签，此时默认是没有智能提示的，这个问题可以通过 JSDoc 标注的方式来解决。
 

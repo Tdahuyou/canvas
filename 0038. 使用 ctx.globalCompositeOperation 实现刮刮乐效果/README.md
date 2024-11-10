@@ -1,9 +1,7 @@
 # [0038. 使用 ctx.globalCompositeOperation 实现刮刮乐效果](https://github.com/Tdahuyou/canvas/tree/main/0038.%20%E4%BD%BF%E7%94%A8%20ctx.globalCompositeOperation%20%E5%AE%9E%E7%8E%B0%E5%88%AE%E5%88%AE%E4%B9%90%E6%95%88%E6%9E%9C)
 
 看懂实现原理即可。
-
 这个效果挺好玩的，不过想要监听结果如何出现，不太容易。
-
 **最终效果展示：**
 ![](md-imgs/使用%20ctx.globalCompositeOperation%20实现刮刮乐效果.gif)
 
