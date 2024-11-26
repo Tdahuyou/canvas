@@ -1,15 +1,21 @@
 # [0043. 给图像添加阴影](https://github.com/Tdahuyou/canvas/tree/main/0043.%20%E7%BB%99%E5%9B%BE%E5%83%8F%E6%B7%BB%E5%8A%A0%E9%98%B4%E5%BD%B1)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 跟 css 中的 box-shadow 类似，都可以用于给盒子添加阴影。在 canvas 中，可以给阴影添加颜色ctx.shadowColor、模糊半径shadowBlur、偏移shadowOffsetX、shadowOffsetY。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetY
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetX
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowBlur
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowColor
 
-## 📒 notes
+## 3. 📒 notes
 
 shadowColor 设置阴影的颜色。
 
@@ -17,7 +23,7 @@ shadowBlur 设置阴影的模糊程度。值越大，阴影越模糊。
 
 shadowOffsetX 和 shadowOffsetY 属性用于设置阴影的偏移量。
 
-## 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -58,7 +64,7 @@ shadowOffsetX 和 shadowOffsetY 属性用于设置阴影的偏移量。
 
 ![](md-imgs/2024-10-04-12-02-11.png)
 
-## 💻 demo2
+## 5. 💻 demo2
 
 ```html
 <!-- 2.html -->

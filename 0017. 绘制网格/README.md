@@ -1,7 +1,11 @@
 # [0017. 绘制网格](https://github.com/Tdahuyou/canvas/tree/main/0017.%20%E7%BB%98%E5%88%B6%E7%BD%91%E6%A0%BC)
 
 
-## 📒 notes
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 做一个可视化的网格，作为参考坐标系，以便更直观地查看坐标，主要是辅助学习用。
 > 其中 `drawGrid.js` 用到的一些知识点，在其它文档中会介绍。
@@ -55,7 +59,7 @@ function drawGrid(canvas, width = 500, height = 500, cellSize = 50, opacity = 0.
 这里提前将其丢到这里来介绍，是为了给后续内容做一个铺垫，将不可见的坐标可视化地绘制出来，参考着可视化的坐标来学习，效果也许会更好。毕竟类似 canvas 和 svg 这类的可视化技术，无时无刻不在跟不可见的坐标系打交道。
 
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -85,7 +89,7 @@ function drawGrid(canvas, width = 500, height = 500, cellSize = 50, opacity = 0.
 
 ![](md-imgs/2024-10-03-23-22-09.png)
 
-## 💻 demo2
+## 3. 💻 demo2
 
 ```html
 <!-- 2.html -->

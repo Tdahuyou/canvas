@@ -1,8 +1,16 @@
 # [0023. 使用 ctx.beginPath 方法对路径进行分组](https://github.com/Tdahuyou/canvas/tree/main/0023.%20%E4%BD%BF%E7%94%A8%20ctx.beginPath%20%E6%96%B9%E6%B3%95%E5%AF%B9%E8%B7%AF%E5%BE%84%E8%BF%9B%E8%A1%8C%E5%88%86%E7%BB%84)
 
+
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
+
 - 学会使用 `ctx.beginPath()` 对路径进行分组，并了解如果不使用分组的话，会存在什么潜在问题。
 
-## 📒 notes
+## 2. 📒 notes
 
 **需求：**
 1. 先在 `(50, 50)` 位置绘制一个 `100 x 100` 的矩形轮廓（轮廓颜色为蓝色）
@@ -10,7 +18,7 @@
 
 下面我们将通过上述这俩简单的小需求，体验一下 `ctx.beginPath()` 的作用。
 
-## 💻 demo1 - 错误写法
+## 3. 💻 demo1 - 错误写法
 
 ```html
 <!-- 1.html -->
@@ -65,7 +73,7 @@ stroke() 或 fill() 默认会对 **之前所有绘制的路径** 进行一个处
 
 ![](md-imgs/2024-10-04-00-52-36.png)
 
-## 💻 demo2 - 正确写法 1
+## 4. 💻 demo2 - 正确写法 1
 
 ```html
 <!-- 2.html -->
@@ -110,7 +118,7 @@ stroke() 或 fill() 默认会对 **之前所有绘制的路径** 进行一个处
 
 ![](md-imgs/2024-10-04-00-53-46.png)
 
-## 💻 demo3 - 正确写法 2
+## 5. 💻 demo3 - 正确写法 2
 
 ```html
 <!-- 3.html -->

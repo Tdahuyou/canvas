@@ -1,8 +1,14 @@
 # [0018. 使用 ctx.fillRect 绘制矩形](https://github.com/Tdahuyou/canvas/tree/main/0018.%20%E4%BD%BF%E7%94%A8%20ctx.fillRect%20%E7%BB%98%E5%88%B6%E7%9F%A9%E5%BD%A2)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - 学会使用 `ctx.fillRect()` 来绘制一个填充矩形。
 
-## 📒 notes
+## 2. 📒 notes
 
 `ctx.fillRect(x, y, width, height)`
 - `(x, y)` 表示从哪个点开始绘制；
@@ -10,7 +16,7 @@
 
 顾名思义，这玩意儿绘制的是一个填充矩形。当你没有指定填充样式 `ctx.fillStyle` 的时候，默认将会绘制一个黑色的填充矩形。
 
-## 💻 demo1 - 绘制一个默认的黑色填充矩形
+## 3. 💻 demo1 - 绘制一个默认的黑色填充矩形
 
 ```html
 <!-- 1.html -->
@@ -42,7 +48,7 @@
 
 ![](md-imgs/2024-10-04-00-45-56.png)
 
-## 💻 demo2 - 指定绘制矩形的颜色
+## 4. 💻 demo2 - 指定绘制矩形的颜色
 
 ```html
 <!-- 2.html -->

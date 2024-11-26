@@ -1,13 +1,19 @@
 # [0037. 使用 ctx.globalCompositeOperation 处理图像合成](https://github.com/Tdahuyou/canvas/tree/main/0037.%20%E4%BD%BF%E7%94%A8%20ctx.globalCompositeOperation%20%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F%E5%90%88%E6%88%90)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 理解单词 source（源）和目标 destination（目标）的含义，有助于对 `ctx.globalCompositeOperation` 的相关属性值（`source-over`、`destination-in`……）的理解。
 至于合成颜色，比如更亮 lighter、更暗 darken、颜色盘 hue 等等和颜色相关的，可以先跳过，因为还看不懂它的颜色具体是如何计算出来的，只要对最终呈现的效果有个大致的概念即可（比如你想要让合成区域亮一些，知道用 `lighter` 这个值来尝试下就行，至于如何微调就先不用去想了）。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation - MDN - ctx.globalCompositeOperation
 
-## 📒 notes
+## 3. 📒 notes
 
 `ctx.globalCompositeOperation` 用于设置如何将新绘制的图像与已存在的画布内容合成，决定新图像如何与底层内容相结合。
 
@@ -24,7 +30,7 @@
 > composite 合成
 > operation 操作
 
-## 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -231,7 +237,7 @@
 
 ![](md-imgs/2024-10-04-11-53-55.png)
 
-## 💻 demo2
+## 5. 💻 demo2
 
 ```html
 <!-- 2.html -->

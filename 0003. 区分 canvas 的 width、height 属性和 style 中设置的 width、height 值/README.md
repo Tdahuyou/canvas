@@ -1,5 +1,11 @@
 # [0003. 区分 canvas 的 width、height 属性和 style 中设置的 width、height 值](https://github.com/Tdahuyou/canvas/tree/main/0003.%20%E5%8C%BA%E5%88%86%20canvas%20%E7%9A%84%20width%E3%80%81height%20%E5%B1%9E%E6%80%A7%E5%92%8C%20style%20%E4%B8%AD%E8%AE%BE%E7%BD%AE%E7%9A%84%20width%E3%80%81height%20%E5%80%BC)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. ⏰ TODO 待整理
+
 在设置画布尺寸的时候，直接设置 canvas 的 width、height 属性值，不要通过 css 来设置 width、height。
 - 【推荐】直接设置 canvas 的 wdith 和 height：`<canvas width="400" height="400"></canvas>`
 - 【不推荐】通过 css 来设置 width 和 height：`canvas { width: 400, height: 400 }`

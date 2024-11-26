@@ -1,10 +1,16 @@
 # [0027. 使用 ctx.arcTo 绘制圆弧](https://github.com/Tdahuyou/canvas/tree/main/0027.%20%E4%BD%BF%E7%94%A8%20ctx.arcTo%20%E7%BB%98%E5%88%B6%E5%9C%86%E5%BC%A7)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - 学会使用 `ctx.arcTo` 绘制圆弧。
 **需要注意：**传入的参数并不决定绘制的线条的起点 or 终点，而仅仅是起到决定圆弧弧度的作用。
 `ctx.arcTo` 绘制圆弧比较奇怪，你只需要通过控制点描述出一个角就行，它这玩意儿会根据你给定的角去绘制弧，最终绘制出来的弧的起点和终点，并不一定是从你的控制点开始的。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -67,7 +73,7 @@
 
 ![](md-imgs/2024-10-04-10-58-45.png)
 
-## 💻 demo2
+## 3. 💻 demo2
 
 ```html
 <!-- 2.html -->

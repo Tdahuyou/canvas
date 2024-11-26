@@ -1,11 +1,14 @@
 # [0019. 使用 ctx.strokeRect 绘制矩形](https://github.com/Tdahuyou/canvas/tree/main/0019.%20%E4%BD%BF%E7%94%A8%20ctx.strokeRect%20%E7%BB%98%E5%88%B6%E7%9F%A9%E5%BD%A2)
 
+<!-- region:toc -->
 
-## 📒 notes
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 学会使用 `ctx.strokeRect()` 来绘制一个描边矩形。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->

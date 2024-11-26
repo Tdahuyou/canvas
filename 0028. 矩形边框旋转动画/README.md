@@ -1,7 +1,11 @@
 # [0028. 矩形边框旋转动画](https://github.com/Tdahuyou/canvas/tree/main/0028.%20%E7%9F%A9%E5%BD%A2%E8%BE%B9%E6%A1%86%E6%97%8B%E8%BD%AC%E5%8A%A8%E7%94%BB)
 
 
-## 📒 notes
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 当你想要让线条沿着绘制的路径动起来的时候，都可以尝试下 `lineDashOffset`。
 
@@ -9,7 +13,7 @@
 
 `lineDashOffset` 虚线的位移不仅作用于直线上边，在矩形轮廓，弧形轮廓，圆形轮廓上都能够起作用。当你想要让线条沿着绘制的路径动起来的时候，都可以尝试下 `lineDashOffset`。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->

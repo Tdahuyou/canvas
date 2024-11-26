@@ -1,19 +1,25 @@
 # [0031. 使用 ctx.clip 实现图像裁剪](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解，并且暂时也还不清楚填充规则有何实际的应用场景……
 
-## ⏰ todos
+## 2. ⏰ todos
 
 - [ ] 在这篇文章的最后一个示例中，存在个问题还没理解。
 
-## 🔗 links
+## 3. 🔗 links
 
 - https://www.zhangxinxu.com/wordpress/2018/10/nonzero-evenodd-fill-mode-rule/ - 搞懂SVG/Canvas中nonzero和evenodd填充规则 « 张鑫旭-鑫空间-鑫生活。
 - https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/clip - MDN - CanvasRenderingContext2D：clip() 方法
 - https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule - Wiki - Even–odd rule
 - https://en.wikipedia.org/wiki/Nonzero-rule - Wiki - Nonzero-rule
 
-## 📒 notes
+## 4. 📒 notes
 
 `ctx.clip` 用来裁剪图像，难点在于理解填充规则。
 
@@ -23,11 +29,11 @@ ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解�
 
 当画布上出现多个闭合路径的时候，区分哪些区域是有效区域。
 
-## 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则
+## 5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则
 
 > 注：以下为搬运内容！
 
-### 填充有两种规则
+### 5.1. 填充有两种规则
 
 ![](md-imgs/2024-10-04-11-30-30.png)
 
@@ -53,7 +59,7 @@ ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解�
 
 究竟是如何作用的呢？且看~
 
-### 一切都是交叉点们的选择
+### 5.2. 一切都是交叉点们的选择
 
 填充规则的关键，就是确定复杂路径构成的图形，哪些是内部，哪些是外部。内部则填充，外部则透明。
 
@@ -114,13 +120,13 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 最后这个点C，发出的射线总共和3个路径交叉，是奇数。因此，属于路径内，填充。
 
-### 啦啦啦，结束语
+### 5.3. 啦啦啦，结束语
 
 不知大家搞懂没？
 
 ![](md-imgs/2024-10-04-11-32-52.png)
 
-## 💻 demo1 - 裁剪菱形
+## 6. 💻 demo1 - 裁剪菱形
 
 ```html
 <!-- 1.html -->
@@ -188,7 +194,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-27.png)
 
-## 💻 demo2 - 裁剪圆形
+## 7. 💻 demo2 - 裁剪圆形
 
 ```html
 <!-- 2.html -->
@@ -245,7 +251,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-35.png)
 
-## 💻 demo3 - 理解 fillRule
+## 8. 💻 demo3 - 理解 fillRule
 
 ```html
 <!-- 3.html -->
@@ -340,7 +346,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-46.png)
 
-## 💻 demo4 - 问题记录
+## 9. 💻 demo4 - 问题记录
 
 ```html
 <!-- 4.html -->

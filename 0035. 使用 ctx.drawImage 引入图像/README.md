@@ -1,16 +1,22 @@
 # [0035. 使用 ctx.drawImage 引入图像](https://github.com/Tdahuyou/canvas/tree/main/0035.%20%E4%BD%BF%E7%94%A8%20ctx.drawImage%20%E5%BC%95%E5%85%A5%E5%9B%BE%E5%83%8F)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 一共有 3 种传参方式：
 1. `drawImage(image, dx, dy)`
 2. `drawImage(image, dx, dy, dWidth, dHeight)`
 3. `drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)`
 最后一种能用来模拟截图效果。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage - MDN - `ctx.drawImage`
 
-## 📒 notes
+## 3. 📒 notes
 
 `ctx.drawImage` 常见有 3 种写法：
 
@@ -24,7 +30,7 @@
 
 你可以自由裁剪图片的某一部分矩形区域来显示，实现仅展示一张图片的局部效果，在制作一些简单的连续的动画效果时特别有用。
 
-## 💻 demo1 - 保持图片原始尺寸
+## 4. 💻 demo1 - 保持图片原始尺寸
 
 ```html
 <!DOCTYPE html>
@@ -60,7 +66,7 @@
 
 ![](md-imgs/2024-10-04-11-47-57.png)
 
-## 💻 demo2 - 约束图片尺寸
+## 5. 💻 demo2 - 约束图片尺寸
 
 
 ```html
@@ -101,7 +107,7 @@
 
 ![](md-imgs/2024-10-04-11-48-03.png)
 
-## 💻 demo3 - 裁剪图片
+## 6. 💻 demo3 - 裁剪图片
 
 
 ```html

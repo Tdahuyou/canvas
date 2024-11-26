@@ -1,8 +1,14 @@
 # [0012. 使用 ctx.lineTo 来绘制线条](https://github.com/Tdahuyou/canvas/tree/main/0012.%20%E4%BD%BF%E7%94%A8%20ctx.lineTo%20%E6%9D%A5%E7%BB%98%E5%88%B6%E7%BA%BF%E6%9D%A1)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - 学会使用 `ctx.lineTo` 来绘制线条。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -40,7 +46,7 @@
 
 ![](md-imgs/2024-10-03-23-13-29.png)
 
-## 💻 demo2
+## 3. 💻 demo2
 
 ```html
 <!-- 2.html -->

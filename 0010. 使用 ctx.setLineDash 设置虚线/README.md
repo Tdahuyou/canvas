@@ -1,11 +1,14 @@
 # [0010. 使用 ctx.setLineDash 设置虚线](https://github.com/Tdahuyou/canvas/tree/main/0010.%20%E4%BD%BF%E7%94%A8%20ctx.setLineDash%20%E8%AE%BE%E7%BD%AE%E8%99%9A%E7%BA%BF)
 
+<!-- region:toc -->
 
-## 📒 notes
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 学会使用 `ctx.setLineDash` 设置虚线，它会根据我们传入的参数数量不同，选择使用不同的行为来设置虚线之间的间隙。
 
-## 💻 demo
+## 2. 💻 demo
 
 ```html
 <!-- 1.html -->

@@ -1,9 +1,15 @@
 # [0015. 使用 ctx.font 设置字体样式](https://github.com/Tdahuyou/canvas/tree/main/0015.%20%E4%BD%BF%E7%94%A8%20ctx.font%20%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - 知道 `ctx.font` 属性有什么用
 - 知道 `ctx.font` 属性值的书写规则是什么
 
-## 💻 demo
+## 2. 💻 demo
 
 ```html
 <!-- 1.html -->

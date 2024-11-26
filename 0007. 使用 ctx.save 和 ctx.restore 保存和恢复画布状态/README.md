@@ -1,16 +1,22 @@
 # [0007. 使用 ctx.save 和 ctx.restore 保存和恢复画布状态](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 画笔状态的存储和恢复还是比较常见的操作，需要掌握一些常见的写法。
 
-## 📒 notes
+## 2. 📒 notes
 
 [ctx.save()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/save) 和 [ctx.restore()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/restore) 方法用于保存和恢复画布（Canvas）的状态。
 
-### `ctx.save` 和 `ctx.restore` 使用场景
+### 2.1. `ctx.save` 和 `ctx.restore` 使用场景
 
 在你需要暂时改变绘图样式、变换或者路径，而后又想恢复到之前状态的情况下特别有用。
 
-### `ctx.save()`
+### 2.2. `ctx.save()`
 
 这个方法用于保存当前画布的所有状态。
 
@@ -23,13 +29,13 @@
 - 裁剪 `ctx.clip`
 - ……
 
-### ctx.restore()
+### 2.3. ctx.restore()
 
 这个方法用于恢复 **最近一次** 通过 `ctx.save()` 保存的画布状态。
 
 你可以调用多次 `ctx.save()` 来保存多个状态，并按照栈的后进先出（LIFO）顺序通过 `ctx.restore()` 来恢复这些状态。
 
-### 常见用法：存 - 改 - 复原
+### 2.4. 常见用法：存 - 改 - 复原
 
 ```javascript
 const canvas = document.createElement('canvas')
@@ -66,7 +72,7 @@ function draw2() {
 2. 自定义画笔状态来实现绘图。
 3. 本次绘制逻辑结束，恢复画笔到开始状态。`ctx.restore()`
 
-## 💻 demo
+## 3. 💻 demo
 
 ```html
 <!-- 1.html -->

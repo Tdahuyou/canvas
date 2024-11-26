@@ -1,12 +1,18 @@
 # [0005. canvas 的默认尺寸 300 x 150](https://github.com/Tdahuyou/canvas/tree/main/0005.%20canvas%20%E7%9A%84%E9%BB%98%E8%AE%A4%E5%B0%BA%E5%AF%B8%20300%20x%20150)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 summary
+
 - 知道 `<canvas>` 默认是 300x150 的行盒。
 
-## 📒 notes
+## 2. 📒 notes
 
 如果你仅仅创建了一个 canvas，但是并没有指定它的 width、height，那么这个 canvas 的默认尺寸是 300x150。
 
-## 💻 demo
+## 3. 💻 demo
 
 ```html
 <!-- 1.html -->

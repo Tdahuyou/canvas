@@ -1,9 +1,15 @@
 # [0039. 下载、使用 canvas 图像](https://github.com/Tdahuyou/canvas/tree/main/0039.%20%E4%B8%8B%E8%BD%BD%E3%80%81%E4%BD%BF%E7%94%A8%20canvas%20%E5%9B%BE%E5%83%8F)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 canvas 本身也是图像，可以被下载，可以被引用。
 通过一个示例，加深对 canvas 的理解，你可以将其就看做是一个白色的图片，然后通过 canvas 提供的一些 API 在这个白色的图片上绘图，绘图完毕后你可以下载这张图片，也可以引用这张图进行二次创作。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->

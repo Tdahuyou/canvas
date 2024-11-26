@@ -1,12 +1,18 @@
 # [0041. 使用 ctx.createLinearGradient 实现线性渐变效果](https://github.com/Tdahuyou/canvas/tree/main/0041.%20%E4%BD%BF%E7%94%A8%20ctx.createLinearGradient%20%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E6%B8%90%E5%8F%98%E6%95%88%E6%9E%9C)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - `createLinearGradient(x0, y0, x1, y1)` 它设置的仅仅是线性渐变的区域。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createLinearGradient - MDN - `ctx.createLinearGradient`。
 
-## 💻 demo1
+## 3. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -97,7 +103,7 @@
 
 ![](md-imgs/2024-10-04-11-59-28.png)
 
-## 💻 demo2
+## 4. 💻 demo2
 
 ```html
 <!-- 2.html -->

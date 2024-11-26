@@ -1,8 +1,16 @@
 # [0020. 使用 ctx.roundRect 绘制圆角矩形](https://github.com/Tdahuyou/canvas/tree/main/0020.%20%E4%BD%BF%E7%94%A8%20ctx.roundRect%20%E7%BB%98%E5%88%B6%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2)
 
+
+
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 - 学会使用 `ctx.roundRect()` 来绘制一个圆角矩形路径。
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -34,7 +42,7 @@
 
 ![](md-imgs/2024-10-04-00-47-41.png)
 
-## 💻 demo2
+## 3. 💻 demo2
 
 ```html
 <!-- 2.html -->
@@ -66,7 +74,7 @@
 
 ![](md-imgs/2024-10-04-00-47-52.png)
 
-## 💻 demo3
+## 4. 💻 demo3
 
 ```html
 <!-- 3.html -->

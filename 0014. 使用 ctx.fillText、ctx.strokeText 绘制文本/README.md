@@ -1,7 +1,10 @@
 # [0014. 使用 ctx.fillText、ctx.strokeText 绘制文本](https://github.com/Tdahuyou/canvas/tree/main/0014.%20%E4%BD%BF%E7%94%A8%20ctx.fillText%E3%80%81ctx.strokeText%20%E7%BB%98%E5%88%B6%E6%96%87%E6%9C%AC)
 
+<!-- region:toc -->
 
-## 📒 notes
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 `ctx.fillText` 绘制填充文本。
 
@@ -13,7 +16,7 @@
 3. 文本的纵坐标
 4. 文本的总宽度
 
-## 💻 demo1
+## 2. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -53,7 +56,7 @@
 
 ![](md-imgs/2024-10-03-23-17-30.png)
 
-## 💻 demo2
+## 3. 💻 demo2
 
 ```html
 <!-- 2.html -->
@@ -90,7 +93,7 @@
 
 ![](md-imgs/2024-10-03-23-17-40.png)
 
-## 💻 demo3
+## 4. 💻 demo3
 
 ```html
 <!-- 3.html -->

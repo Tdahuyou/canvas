@@ -1,13 +1,16 @@
 # [0008. 使用 ctx.lineCap 设置线条端点样式](https://github.com/Tdahuyou/canvas/tree/main/0008.%20%E4%BD%BF%E7%94%A8%20ctx.lineCap%20%E8%AE%BE%E7%BD%AE%E7%BA%BF%E6%9D%A1%E7%AB%AF%E7%82%B9%E6%A0%B7%E5%BC%8F)
 
+<!-- region:toc -->
 
-## 📒 notes
+<!-- endregion:toc -->
+
+## 1. 📒 notes
 
 `lineCap` 表示线帽，也就是线条的端点。`ctx.lineCap` 这玩意儿是用来设置线条端点样式的。
 
 知道 `ctx.lineCap` 这玩意儿是用来配置啥玩意儿的即可，很简单，看看最终的渲染结果和对应的字符串（butt、round、square）自然就理解了。
 
-## 💻 demo
+## 2. 💻 demo
 
 ```html
 <!-- 1.thml -->

@@ -1,16 +1,22 @@
 # [0047. 使用 ctx.transform 来转换图形](https://github.com/Tdahuyou/canvas/tree/main/0047.%20%E4%BD%BF%E7%94%A8%20ctx.transform%20%E6%9D%A5%E8%BD%AC%E6%8D%A2%E5%9B%BE%E5%BD%A2)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 ctx.transform 很强大，可以实现很多转换效果，难点在于计算坐标的转换规则。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/transform - MDN - CanvasRenderingContext2D：transform() 方法
 
-## 📒 notes
+## 3. 📒 notes
 
 ctx.transform 很强大，可以实现很多转换效果。但是这玩意儿的参数值需要根据具体的转换效果来挨个计算。
 
-### ctx.transform 坐标转换计算规则
+### 3.1. ctx.transform 坐标转换计算规则
 
 这部分介绍有关 ctx.transform 坐标转换的计算规则。
 
@@ -70,7 +76,7 @@ $$
 
 `setTransform()` 也用于设置变换矩阵，但它会重置当前的变换矩阵再设置新的矩阵，而不是累积应用。
 
-## 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -107,7 +113,7 @@ $$
 
 ![](md-imgs/2024-10-04-15-11-05.png)
 
-## 💻 demo2
+## 5. 💻 demo2
 
 ```html
 <!-- 2.html -->
@@ -148,7 +154,7 @@ $$
 
 ![](md-imgs/2024-10-04-15-11-15.png)
 
-## 💻 demo3
+## 6. 💻 demo3
 
 ```html
 <!-- 3.html -->
@@ -186,7 +192,7 @@ $$
 
 ![](md-imgs/2024-10-04-15-11-25.png)
 
-## 💻 demo4
+## 7. 💻 demo4
 
 ```html
 <!-- 4.html -->

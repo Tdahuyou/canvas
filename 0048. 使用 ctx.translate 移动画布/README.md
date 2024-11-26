@@ -1,12 +1,18 @@
 # [0048. 使用 ctx.translate 移动画布](https://github.com/Tdahuyou/canvas/tree/main/0048.%20%E4%BD%BF%E7%94%A8%20ctx.translate%20%E7%A7%BB%E5%8A%A8%E7%94%BB%E5%B8%83)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 ctx.translate 用于移动画布和其原点到一个新的位置。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/translate - MDN - CanvasRenderingContext2D：translate() 方法
 
-## 📒 notes
+## 3. 📒 notes
 
 ctx.translate 用于移动画布和其原点到一个新的位置。
 
@@ -16,7 +22,7 @@ ctx.translate 用于移动画布和其原点到一个新的位置。
 
 ![](md-imgs/2024-10-04-15-12-33.png)
 
-## 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->

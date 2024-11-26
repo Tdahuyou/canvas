@@ -1,12 +1,18 @@
 # [0046. 使用 ctx.scale 缩放绘制的图像](https://github.com/Tdahuyou/canvas/tree/main/0046.%20%E4%BD%BF%E7%94%A8%20ctx.scale%20%E7%BC%A9%E6%94%BE%E7%BB%98%E5%88%B6%E7%9A%84%E5%9B%BE%E5%83%8F)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 ctx.scale 用于在画布上缩放绘制的图像。通过传入负数，还能实现坐标的翻转。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale - MDN - CanvasRenderingContext2D：scale() 方法
 
-## 📒 notes
+## 3. 📒 notes
 
 ctx.scale 用于在画布上缩放绘制的图像。
 
@@ -17,7 +23,7 @@ ctx.scale 用于在画布上缩放绘制的图像。
 2. 这玩意儿如果传入的参数是负数，那么将会导致坐标系反转。
 3. 这种变换对后续的所有绘图操作都是有效的，直到画布的缩放状态被重置或修改。
 
-## 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -70,7 +76,7 @@ ctx.scale 用于在画布上缩放绘制的图像。
 
 ![](md-imgs/2024-10-04-15-05-25.png)
 
-## 💻 demo2
+## 5. 💻 demo2
 
 ```html
 <!-- 2.html -->

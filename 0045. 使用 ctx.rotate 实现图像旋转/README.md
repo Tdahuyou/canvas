@@ -1,11 +1,15 @@
 # [0045. 使用 ctx.rotate 实现图像旋转](https://github.com/Tdahuyou/canvas/tree/main/0045.%20%E4%BD%BF%E7%94%A8%20ctx.rotate%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E6%97%8B%E8%BD%AC)
 
+<!-- region:toc -->
 
-## 🔗 links
+<!-- endregion:toc -->
+
+
+## 1. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate - MDN - CanvasRenderingContext2D：rotate() 方法。
 
-## 📒 notes
+## 2. 📒 notes
 
 ctx.rotate 用于旋转画布的当前绘图。
 
@@ -16,7 +20,7 @@ ctx.rotate 用于旋转画布的当前绘图。
 4. 这种旋转会影响到之后所有的绘制操作，直到画布的变换状态被重置或者再次修改。
 5. 每次的旋转都是基于当前的坐标轴已旋转的角度进一步旋转的。
 
-## 💻 demo1
+## 3. 💻 demo1
 
 ```html
 <!-- 1.html -->
@@ -106,7 +110,7 @@ ctx.rotate 用于旋转画布的当前绘图。
 
 ![](md-imgs/2024-10-04-15-03-44.png)
 
-## 💻 demo2
+## 4. 💻 demo2
 
 ```html
 <!-- 2.html -->

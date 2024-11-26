@@ -1,24 +1,30 @@
 # [0036. 使用 ctx.getImageData、ctx.putImageData 实现图像的像素处理](https://github.com/Tdahuyou/canvas/tree/main/0036.%20%E4%BD%BF%E7%94%A8%20ctx.getImageData%E3%80%81ctx.putImageData%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E5%83%8F%E7%B4%A0%E5%A4%84%E7%90%86)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 先对 `ctx.getImageData`、`ctx.putImageData` 的使用有个基本的了解即可。想要玩 6️⃣ 它们，还需要去学习图像颜色处理的更多知识。
 文档中提到的示例，处理逻辑都是：
 1. 先读图片数据 `ctx.getImageData`
 2. 再对图片数据进行修改
 3. 最后将修改后的数据写入图片 `ctx.putImageData`
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData - MDN - CanvasRenderingContext2D: getImageData() method，读图片数据。
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData - MDN - CanvasRenderingContext2D: putImageData() method，写图片数据。
 
-## 📒 notes
+## 3. 📒 notes
 
 ctx.getImageData、ctx.putImageData 这俩 API 的功能很强大，能玩出很多效果 —— 因为拿到了整个图像的所有像素点数据。
 
 素材原图像：
 ![](md-imgs/2024-10-04-11-50-13.png)
 
-## 💻 demo1 - 置灰
+## 4. 💻 demo1 - 置灰
 
 ```html
 <!-- 1.html -->
@@ -90,7 +96,7 @@ ctx.getImageData、ctx.putImageData 这俩 API 的功能很强大，能玩出很
 
 ![](md-imgs/2024-10-04-11-50-46.png)
 
-## 💻 demo2 - 图像反色处理
+## 5. 💻 demo2 - 图像反色处理
 
 ```html
 <!-- 2.html -->
@@ -142,7 +148,7 @@ ctx.getImageData、ctx.putImageData 这俩 API 的功能很强大，能玩出很
 
 ![](md-imgs/2024-10-04-11-51-02.png)
 
-## 💻 demo3 - 置蓝
+## 6. 💻 demo3 - 置蓝
 
 ```html
 <!-- 3.html -->

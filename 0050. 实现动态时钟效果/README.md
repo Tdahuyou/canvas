@@ -1,12 +1,18 @@
 # [0050. 实现动态时钟效果](https://github.com/Tdahuyou/canvas/tree/main/0050.%20%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E6%97%B6%E9%92%9F%E6%95%88%E6%9E%9C)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 UI 还有很大的优化空间，重点在于理解时钟效果的实现逻辑。
 
-## 📒 notes - 动态时钟的最终实现效果
+## 2. 📒 动态时钟的最终实现效果
 
 ![](md-imgs/0050-实现动态时钟效果.gif)
 
-## 💻 demo - 动态始终效果实现源码
+## 3. 💻 demo - 动态始终效果实现源码
 
 ```html
 <!-- index.html -->

@@ -1,13 +1,19 @@
 # [0044. 使用 ctx.filter 实现滤镜效果](https://github.com/Tdahuyou/canvas/tree/main/0044.%20%E4%BD%BF%E7%94%A8%20ctx.filter%20%E5%AE%9E%E7%8E%B0%E6%BB%A4%E9%95%9C%E6%95%88%E6%9E%9C)
 
+<!-- region:toc -->
+
+<!-- endregion:toc -->
+
+## 1. 📝 Summary
+
 文档对 ctx.filter 实现滤镜效果做了个简述，快速过了一遍和滤镜相关的部分内容。
 陌生的单词有些多…… 需要理解这些单词的含义。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter - MDN - ctx.filter。
 
-## 📒 notes
+## 3. 📒 notes
 
 ctx.filter 用于设置滤镜效果，跟 css 中的滤镜语法、功能都非常类似。
 
@@ -44,7 +50,7 @@ function createCanvas(filterStr) {
 }
 ```
 
-## 💻 demo1 - blur
+## 4. 💻 demo1 - blur
 
 ```html
 <!DOCTYPE html>
@@ -78,7 +84,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-05-21.png)
 
-## 💻 demo2 - brightness
+## 5. 💻 demo2 - brightness
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +122,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-05-31.png)
 
-## 💻 demo3 - hue-rotate
+## 6. 💻 demo3 - hue-rotate
 
 ```html
 <!DOCTYPE html>
@@ -157,7 +163,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-05-41.png)
 
-## 💻 demo4 - drop-shadow
+## 7. 💻 demo4 - drop-shadow
 
 
 ```html
@@ -196,7 +202,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-05-51.png)
 
-## 💻 demo5 - invert
+## 8. 💻 demo5 - invert
 
 ```html
 <!DOCTYPE html>
@@ -238,7 +244,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-06-02.png)
 
-## 💻 demo6 - sepia
+## 9. 💻 demo6 - sepia
 
 ```html
 <!DOCTYPE html>
@@ -275,7 +281,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-06-13.png)
 
-## 💻 demo7 - grayscale
+## 10. 💻 demo7 - grayscale
 
 ```html
 <!DOCTYPE html>
@@ -313,7 +319,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-06-26.png)
 
-## 💻 demo8 - saturate
+## 11. 💻 demo8 - saturate
 
 ```html
 <!DOCTYPE html>
@@ -351,7 +357,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-06-37.png)
 
-## 💻 demo9 - contrast
+## 12. 💻 demo9 - contrast
 
 ```html
 <!DOCTYPE html>
@@ -389,7 +395,7 @@ function createCanvas(filterStr) {
 
 ![](md-imgs/2024-10-04-12-06-50.png)
 
-## 💻 demo10 - 使用 url 引用 svg 滤镜
+## 13. 💻 demo10 - 使用 url 引用 svg 滤镜
 
 ```html
 <!DOCTYPE html>
