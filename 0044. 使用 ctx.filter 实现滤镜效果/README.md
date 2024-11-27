@@ -1,7 +1,19 @@
 # [0044. 使用 ctx.filter 实现滤镜效果](https://github.com/Tdahuyou/canvas/tree/main/0044.%20%E4%BD%BF%E7%94%A8%20ctx.filter%20%E5%AE%9E%E7%8E%B0%E6%BB%A4%E9%95%9C%E6%95%88%E6%9E%9C)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1 - blur](#4--demo1---blur)
+- [5. 💻 demo2 - brightness](#5--demo2---brightness)
+- [6. 💻 demo3 - hue-rotate](#6--demo3---hue-rotate)
+- [7. 💻 demo4 - drop-shadow](#7--demo4---drop-shadow)
+- [8. 💻 demo5 - invert](#8--demo5---invert)
+- [9. 💻 demo6 - sepia](#9--demo6---sepia)
+- [10. 💻 demo7 - grayscale](#10--demo7---grayscale)
+- [11. 💻 demo8 - saturate](#11--demo8---saturate)
+- [12. 💻 demo9 - contrast](#12--demo9---contrast)
+- [13. 💻 demo10 - 使用 url 引用 svg 滤镜](#13--demo10---使用-url-引用-svg-滤镜)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

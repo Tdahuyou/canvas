@@ -1,7 +1,8 @@
 # [0038. 使用 ctx.globalCompositeOperation 实现刮刮乐效果](https://github.com/Tdahuyou/canvas/tree/main/0038.%20%E4%BD%BF%E7%94%A8%20ctx.globalCompositeOperation%20%E5%AE%9E%E7%8E%B0%E5%88%AE%E5%88%AE%E4%B9%90%E6%95%88%E6%9E%9C)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo1](#2--demo1)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

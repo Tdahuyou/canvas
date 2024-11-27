@@ -1,7 +1,12 @@
 # [0036. 使用 ctx.getImageData、ctx.putImageData 实现图像的像素处理](https://github.com/Tdahuyou/canvas/tree/main/0036.%20%E4%BD%BF%E7%94%A8%20ctx.getImageData%E3%80%81ctx.putImageData%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E5%83%8F%E7%B4%A0%E5%A4%84%E7%90%86)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1 - 置灰](#4--demo1---置灰)
+- [5. 💻 demo2 - 图像反色处理](#5--demo2---图像反色处理)
+- [6. 💻 demo3 - 置蓝](#6--demo3---置蓝)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

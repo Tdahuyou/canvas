@@ -1,7 +1,9 @@
 # [0011. 使用 ctx.miterLimit 约束两线相交处的最大倾斜长度](https://github.com/Tdahuyou/canvas/tree/main/0011.%20%E4%BD%BF%E7%94%A8%20ctx.miterLimit%20%E7%BA%A6%E6%9D%9F%E4%B8%A4%E7%BA%BF%E7%9B%B8%E4%BA%A4%E5%A4%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BE%E6%96%9C%E9%95%BF%E5%BA%A6)
 
 <!-- region:toc -->
-
+- [1. 📒 notes](#1--notes)
+- [2. 💻 demo1](#2--demo1)
+- [3. 💻 demo2](#3--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📒 notes

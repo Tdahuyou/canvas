@@ -1,7 +1,9 @@
 # [0027. 使用 ctx.arcTo 绘制圆弧](https://github.com/Tdahuyou/canvas/tree/main/0027.%20%E4%BD%BF%E7%94%A8%20ctx.arcTo%20%E7%BB%98%E5%88%B6%E5%9C%86%E5%BC%A7)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo1](#2--demo1)
+- [3. 💻 demo2](#3--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

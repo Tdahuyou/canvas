@@ -1,7 +1,9 @@
 # [0012. 使用 ctx.lineTo 来绘制线条](https://github.com/Tdahuyou/canvas/tree/main/0012.%20%E4%BD%BF%E7%94%A8%20ctx.lineTo%20%E6%9D%A5%E7%BB%98%E5%88%B6%E7%BA%BF%E6%9D%A1)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo1](#2--demo1)
+- [3. 💻 demo2](#3--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

@@ -1,7 +1,9 @@
 # [0005. canvas 的默认尺寸 300 x 150](https://github.com/Tdahuyou/canvas/tree/main/0005.%20canvas%20%E7%9A%84%E9%BB%98%E8%AE%A4%E5%B0%BA%E5%AF%B8%20300%20x%20150)
 
 <!-- region:toc -->
-
+- [1. 📝 summary](#1--summary)
+- [2. 📒 notes](#2--notes)
+- [3. 💻 demo](#3--demo)
 <!-- endregion:toc -->
 
 ## 1. 📝 summary

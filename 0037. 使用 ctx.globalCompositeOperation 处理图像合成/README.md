@@ -1,7 +1,11 @@
 # [0037. 使用 ctx.globalCompositeOperation 处理图像合成](https://github.com/Tdahuyou/canvas/tree/main/0037.%20%E4%BD%BF%E7%94%A8%20ctx.globalCompositeOperation%20%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F%E5%90%88%E6%88%90)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1](#4--demo1)
+- [5. 💻 demo2](#5--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

@@ -1,7 +1,10 @@
 # [0048. 使用 ctx.translate 移动画布](https://github.com/Tdahuyou/canvas/tree/main/0048.%20%E4%BD%BF%E7%94%A8%20ctx.translate%20%E7%A7%BB%E5%8A%A8%E7%94%BB%E5%B8%83)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1](#4--demo1)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

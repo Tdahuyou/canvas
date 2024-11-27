@@ -1,7 +1,10 @@
 # [0034. 使用 ctx.drawImage 实现人物奔跑动画效果](https://github.com/Tdahuyou/canvas/tree/main/0034.%20%E4%BD%BF%E7%94%A8%20ctx.drawImage%20%E5%AE%9E%E7%8E%B0%E4%BA%BA%E7%89%A9%E5%A5%94%E8%B7%91%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo1 - 素材图片展示](#2--demo1---素材图片展示)
+- [3. 💻 demo2 - 原地跑](#3--demo2---原地跑)
+- [4. 💻 demo3 - 向前跑](#4--demo3---向前跑)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

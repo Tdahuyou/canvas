@@ -1,7 +1,8 @@
 # [0039. 下载、使用 canvas 图像](https://github.com/Tdahuyou/canvas/tree/main/0039.%20%E4%B8%8B%E8%BD%BD%E3%80%81%E4%BD%BF%E7%94%A8%20canvas%20%E5%9B%BE%E5%83%8F)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 💻 demo1](#2--demo1)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

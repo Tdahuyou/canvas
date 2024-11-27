@@ -1,7 +1,10 @@
 # [0016. 使用 ctx.textBaseline、ctx.textAlign 设置文本对齐方式](https://github.com/Tdahuyou/canvas/tree/main/0016.%20%E4%BD%BF%E7%94%A8%20ctx.textBaseline%E3%80%81ctx.textAlign%20%E8%AE%BE%E7%BD%AE%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 💻 demo1](#3--demo1)
+- [4. 💻 demo2](#4--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

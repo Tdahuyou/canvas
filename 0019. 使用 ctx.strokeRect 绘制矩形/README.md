@@ -1,7 +1,8 @@
 # [0019. 使用 ctx.strokeRect 绘制矩形](https://github.com/Tdahuyou/canvas/tree/main/0019.%20%E4%BD%BF%E7%94%A8%20ctx.strokeRect%20%E7%BB%98%E5%88%B6%E7%9F%A9%E5%BD%A2)
 
 <!-- region:toc -->
-
+- [1. 📒 notes](#1--notes)
+- [2. 💻 demo1](#2--demo1)
 <!-- endregion:toc -->
 
 ## 1. 📒 notes

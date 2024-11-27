@@ -1,7 +1,11 @@
 # [0043. 给图像添加阴影](https://github.com/Tdahuyou/canvas/tree/main/0043.%20%E7%BB%99%E5%9B%BE%E5%83%8F%E6%B7%BB%E5%8A%A0%E9%98%B4%E5%BD%B1)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1](#4--demo1)
+- [5. 💻 demo2](#5--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

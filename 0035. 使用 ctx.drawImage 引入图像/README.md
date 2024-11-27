@@ -1,7 +1,12 @@
 # [0035. 使用 ctx.drawImage 引入图像](https://github.com/Tdahuyou/canvas/tree/main/0035.%20%E4%BD%BF%E7%94%A8%20ctx.drawImage%20%E5%BC%95%E5%85%A5%E5%9B%BE%E5%83%8F)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1 - 保持图片原始尺寸](#4--demo1---保持图片原始尺寸)
+- [5. 💻 demo2 - 约束图片尺寸](#5--demo2---约束图片尺寸)
+- [6. 💻 demo3 - 裁剪图片](#6--demo3---裁剪图片)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

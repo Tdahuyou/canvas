@@ -1,23 +1,26 @@
 # [0032. 使用 ctx.createPattern 创建填充图案](https://github.com/Tdahuyou/canvas/tree/main/0032.%20%E4%BD%BF%E7%94%A8%20ctx.createPattern%20%E5%88%9B%E5%BB%BA%E5%A1%AB%E5%85%85%E5%9B%BE%E6%A1%88)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1](#4--demo1)
 <!-- endregion:toc -->
 
-## 📝 Summary
+## 1. 📝 Summary
 
 - 理解 ctx.createPattern 的填充机制。
 需要注意 **填充的图案是禁止的，并不会随着我们绘制的图案而移动。**
 
-## 1. 🔗 links
+## 2. 🔗 links
 
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createPattern - MDN - CanvasRenderingContext2D: createPattern() method
 
-## 2. 📒 notes
+## 3. 📒 notes
 
 ctx.createPattern 重点在于理解填充的机制，这可能和你常规印象中的填充机制不一样。**填充的图案是禁止的，并不会随着我们绘制的图案而移动。**我们在使用填充的时候，其实是指定哪一块区域可以看到已经准备好的填充图案。如果这块区域看不到填充图案的话，那么填充看起来就是无效的。
 
-## 3. 💻 demo1
+## 4. 💻 demo1
 
 ```html
 <!-- 1.html -->

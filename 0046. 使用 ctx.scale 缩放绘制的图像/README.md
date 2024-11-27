@@ -1,7 +1,11 @@
 # [0046. 使用 ctx.scale 缩放绘制的图像](https://github.com/Tdahuyou/canvas/tree/main/0046.%20%E4%BD%BF%E7%94%A8%20ctx.scale%20%E7%BC%A9%E6%94%BE%E7%BB%98%E5%88%B6%E7%9A%84%E5%9B%BE%E5%83%8F)
 
 <!-- region:toc -->
-
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes](#3--notes)
+- [4. 💻 demo1](#4--demo1)
+- [5. 💻 demo2](#5--demo2)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary
