@@ -3,7 +3,7 @@
 <!-- region:toc -->
 - [1. 📝 Summary](#1--summary)
 - [2. 💻 demo1 - 自动闭合 vs. 手动闭合](#2--demo1---自动闭合-vs-手动闭合)
-- [3. 💻 demo2 - 注意 `lineWidth`](#3--demo2---注意-`linewidth`)
+- [3. 💻 demo2 - 注意 `lineWidth`](#3--demo2---注意-linewidth)
 <!-- endregion:toc -->
 
 ## 1. 📝 Summary

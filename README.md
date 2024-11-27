@@ -262,7 +262,7 @@
   <!-- region:toc -->
   - [1. 📝 Summary](https://github.com/Tdahuyou/canvas/tree/main/0022.%20%E4%BD%BF%E7%94%A8%20ctx.closePath%20%E9%97%AD%E5%90%88%E8%B7%AF%E5%BE%84/README.md#1--summary)
   - [2. 💻 demo1 - 自动闭合 vs. 手动闭合](https://github.com/Tdahuyou/canvas/tree/main/0022.%20%E4%BD%BF%E7%94%A8%20ctx.closePath%20%E9%97%AD%E5%90%88%E8%B7%AF%E5%BE%84/README.md#2--demo1---自动闭合-vs-手动闭合)
-  - [3. 💻 demo2 - 注意 `lineWidth`](https://github.com/Tdahuyou/canvas/tree/main/0022.%20%E4%BD%BF%E7%94%A8%20ctx.closePath%20%E9%97%AD%E5%90%88%E8%B7%AF%E5%BE%84/README.md#3--demo2---注意-`linewidth`)
+  - [3. 💻 demo2 - 注意 `lineWidth`](https://github.com/Tdahuyou/canvas/tree/main/0022.%20%E4%BD%BF%E7%94%A8%20ctx.closePath%20%E9%97%AD%E5%90%88%E8%B7%AF%E5%BE%84/README.md#3--demo2---注意-linewidth)
   <!-- endregion:toc -->
   
 
@@ -327,8 +327,8 @@
   <!-- region:toc -->
   - [1. 📝 Summary](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#1--summary)
   - [2. 📒 notes](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#2--notes)
-    - [2.1. `ctx.save` 和 `ctx.restore` 使用场景](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#21-`ctxsave`-和-`ctxrestore`-使用场景)
-    - [2.2. `ctx.save()`](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#22-`ctxsave()`)
+    - [2.1. `ctx.save` 和 `ctx.restore` 使用场景](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#21-ctxsave-和-ctxrestore-使用场景)
+    - [2.2. `ctx.save()`](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#22-ctxsave())
     - [2.3. ctx.restore()](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#23-ctxrestore())
     - [2.4. 常见用法：存 - 改 - 复原](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#24-常见用法存---改---复原)
   - [3. 💻 demo](https://github.com/Tdahuyou/canvas/tree/main/0007.%20%E4%BD%BF%E7%94%A8%20ctx.save%20%E5%92%8C%20ctx.restore%20%E4%BF%9D%E5%AD%98%E5%92%8C%E6%81%A2%E5%A4%8D%E7%94%BB%E5%B8%83%E7%8A%B6%E6%80%81/README.md#3--demo)

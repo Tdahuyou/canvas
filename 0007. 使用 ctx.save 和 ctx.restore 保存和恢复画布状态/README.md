@@ -3,8 +3,8 @@
 <!-- region:toc -->
 - [1. 📝 Summary](#1--summary)
 - [2. 📒 notes](#2--notes)
-  - [2.1. `ctx.save` 和 `ctx.restore` 使用场景](#21-`ctxsave`-和-`ctxrestore`-使用场景)
-  - [2.2. `ctx.save()`](#22-`ctxsave()`)
+  - [2.1. `ctx.save` 和 `ctx.restore` 使用场景](#21-ctxsave-和-ctxrestore-使用场景)
+  - [2.2. `ctx.save()`](#22-ctxsave())
   - [2.3. ctx.restore()](#23-ctxrestore())
   - [2.4. 常见用法：存 - 改 - 复原](#24-常见用法存---改---复原)
 - [3. 💻 demo](#3--demo)
