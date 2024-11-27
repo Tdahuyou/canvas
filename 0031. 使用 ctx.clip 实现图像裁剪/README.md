@@ -5,7 +5,7 @@
 - [2. ⏰ todos](#2--todos)
 - [3. 🔗 links](#3--links)
 - [4. 📒 notes](#4--notes)
-- [5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](#5-‍-搞懂-svg/canvas-中-nonzero-和-evenodd-填充规则)
+- [5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](#5--搞懂-svg/canvas-中-nonzero-和-evenodd-填充规则)
   - [5.1. 填充有两种规则](#51-填充有两种规则)
   - [5.2. 一切都是交叉点们的选择](#52-一切都是交叉点们的选择)
   - [5.3. 啦啦啦，结束语](#53-啦啦啦结束语)

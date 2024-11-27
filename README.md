@@ -497,7 +497,7 @@
   - [2. ⏰ todos](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#2--todos)
   - [3. 🔗 links](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#3--links)
   - [4. 📒 notes](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#4--notes)
-  - [5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#5-‍-搞懂-svg/canvas-中-nonzero-和-evenodd-填充规则)
+  - [5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#5--搞懂-svg/canvas-中-nonzero-和-evenodd-填充规则)
     - [5.1. 填充有两种规则](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#51-填充有两种规则)
     - [5.2. 一切都是交叉点们的选择](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#52-一切都是交叉点们的选择)
     - [5.3. 啦啦啦，结束语](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA/README.md#53-啦啦啦结束语)
@@ -567,16 +567,5 @@
   <!-- region:toc -->
   - [1. 📝 Summary](https://github.com/Tdahuyou/canvas/tree/main/0039.%20%E4%B8%8B%E8%BD%BD%E3%80%81%E4%BD%BF%E7%94%A8%20canvas%20%E5%9B%BE%E5%83%8F/README.md#1--summary)
   - [2. 💻 demo1](https://github.com/Tdahuyou/canvas/tree/main/0039.%20%E4%B8%8B%E8%BD%BD%E3%80%81%E4%BD%BF%E7%94%A8%20canvas%20%E5%9B%BE%E5%83%8F/README.md#2--demo1)
-  <!-- endregion:toc -->
-  
-
-
-
-## ⏰ 待分组
-
-- [ ] [9999. template](https://github.com/Tdahuyou/canvas/tree/main/9999.%20template/README.md) <!-- [locale](./9999.%20template/README.md) -->  
-  
-  <!-- region:toc -->
-  - [1. 📝 Summary](https://github.com/Tdahuyou/canvas/tree/main/9999.%20template/README.md#1--summary)
   <!-- endregion:toc -->
   
