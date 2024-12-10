@@ -1,36 +1,29 @@
 # [0031. 使用 ctx.clip 实现图像裁剪](https://github.com/Tdahuyou/canvas/tree/main/0031.%20%E4%BD%BF%E7%94%A8%20ctx.clip%20%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E8%A3%81%E5%89%AA)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. ⏰ todos](#2--todos)
-- [3. 🔗 links](#3--links)
-- [4. 📒 notes](#4--notes)
-- [5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](#5--搞懂-svgcanvas-中-nonzero-和-evenodd-填充规则)
-  - [5.1. 填充有两种规则](#51-填充有两种规则)
-  - [5.2. 一切都是交叉点们的选择](#52-一切都是交叉点们的选择)
-  - [5.3. 啦啦啦，结束语](#53-啦啦啦结束语)
-- [6. 💻 demo1 - 裁剪菱形](#6--demo1---裁剪菱形)
-- [7. 💻 demo2 - 裁剪圆形](#7--demo2---裁剪圆形)
-- [8. 💻 demo3 - 理解 fillRule](#8--demo3---理解-fillrule)
-- [9. 💻 demo4 - 问题记录](#9--demo4---问题记录)
+- [1. 🔗 links](#1--links)
+- [2. 📒 `ctx.clip` 简介](#2--ctxclip-简介)
+- [3. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则](#3--搞懂-svgcanvas-中-nonzero-和-evenodd-填充规则)
+  - [3.1. 填充有两种规则](#31-填充有两种规则)
+  - [3.2. 一切都是交叉点们的选择](#32-一切都是交叉点们的选择)
+  - [3.3. 啦啦啦，结束语](#33-啦啦啦结束语)
+- [4. 💻 demos.1 - 裁剪菱形](#4--demos1---裁剪菱形)
+- [5. 💻 demos.2 - 裁剪圆形](#5--demos2---裁剪圆形)
+- [6. 💻 demos.3 - 理解 fillRule](#6--demos3---理解-fillrule)
+- [7. 💻 demos.4 - 问题记录](#7--demos4---问题记录)
 <!-- endregion:toc -->
+- ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解，并且暂时也还不清楚填充规则有何实际的应用场景……
+- 对于填充规则的介绍，文中引用了“张鑫旭”老师的博客文章 —— 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则。
+- ⏰ 在这篇文章的最后一个示例中，存在个问题还没理解。
 
-## 1. 📝 Summary
-
-ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解，并且暂时也还不清楚填充规则有何实际的应用场景……
-
-## 2. ⏰ todos
-
-- [ ] 在这篇文章的最后一个示例中，存在个问题还没理解。
-
-## 3. 🔗 links
+## 1. 🔗 links
 
 - https://www.zhangxinxu.com/wordpress/2018/10/nonzero-evenodd-fill-mode-rule/ - 搞懂SVG/Canvas中nonzero和evenodd填充规则 « 张鑫旭-鑫空间-鑫生活。
 - https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/clip - MDN - CanvasRenderingContext2D：clip() 方法
 - https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule - Wiki - Even–odd rule
 - https://en.wikipedia.org/wiki/Nonzero-rule - Wiki - Nonzero-rule
 
-## 4. 📒 notes
+## 2. 📒 `ctx.clip` 简介
 
 `ctx.clip` 用来裁剪图像，难点在于理解填充规则。
 
@@ -40,11 +33,11 @@ ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解�
 
 当画布上出现多个闭合路径的时候，区分哪些区域是有效区域。
 
-## 5. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则
+## 3. 👨‍🏫 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则
 
 > 注：以下为搬运内容！
 
-### 5.1. 填充有两种规则
+### 3.1. 填充有两种规则
 
 ![](md-imgs/2024-10-04-11-30-30.png)
 
@@ -70,7 +63,7 @@ ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解�
 
 究竟是如何作用的呢？且看~
 
-### 5.2. 一切都是交叉点们的选择
+### 3.2. 一切都是交叉点们的选择
 
 填充规则的关键，就是确定复杂路径构成的图形，哪些是内部，哪些是外部。内部则填充，外部则透明。
 
@@ -131,16 +124,15 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 最后这个点C，发出的射线总共和3个路径交叉，是奇数。因此，属于路径内，填充。
 
-### 5.3. 啦啦啦，结束语
+### 3.3. 啦啦啦，结束语
 
 不知大家搞懂没？
 
 ![](md-imgs/2024-10-04-11-32-52.png)
 
-## 6. 💻 demo1 - 裁剪菱形
+## 4. 💻 demos.1 - 裁剪菱形
 
 ```html
-<!-- 1.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -156,7 +148,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
     </style>
   </head>
   <body>
-    <script src="./drawGrid.js"></script>
+    <script src="../drawGrid.js"></script>
     <script>
       // 使用 ctx.clip() 方法设置裁剪区域。
       // 接下来绘制的图形只会在裁剪路径中展示。
@@ -205,10 +197,9 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-27.png)
 
-## 7. 💻 demo2 - 裁剪圆形
+## 5. 💻 demos.2 - 裁剪圆形
 
 ```html
-<!-- 2.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -224,7 +215,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
     </style>
   </head>
   <body>
-    <script src="./drawGrid.js"></script>
+    <script src="../drawGrid.js"></script>
     <script>
       {
         const canvas = document.createElement('canvas')
@@ -232,13 +223,13 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
         document.body.append(canvas)
         const ctx = canvas.getContext('2d')
         const img = new Image()
-        img.src = './week.png'
+        img.src = './we.png'
         img.onload = function () {
           ctx.drawImage(img, -200, -10)
         }
       }
 
-      // 裁剪出 week 的头像
+      // 裁剪出 we 的头像
       {
         const canvas = document.createElement('canvas')
         drawGrid(canvas, 400, 400, 50)
@@ -246,7 +237,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
         const ctx = canvas.getContext('2d')
 
         const img = new Image()
-        img.src = './week.png'
+        img.src = '../we.png'
         img.onload = function () {
           ctx.beginPath()
           ctx.arc(200, 200, 100, 0, Math.PI * 2)
@@ -262,10 +253,9 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-35.png)
 
-## 8. 💻 demo3 - 理解 fillRule
+## 6. 💻 demos.3 - 理解 fillRule
 
 ```html
-<!-- 3.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -281,7 +271,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
     </style>
   </head>
   <body>
-    <script src="./drawGrid.js"></script>
+    <script src="../drawGrid.js"></script>
     <script>
       // ctx.clip 方法还可以传递一个参数，表示裁剪路径的填充规则（fillRule）。
 
@@ -357,10 +347,9 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
 
 ![](md-imgs/2024-10-04-11-34-46.png)
 
-## 9. 💻 demo4 - 问题记录
+## 7. 💻 demos.4 - 问题记录
 
 ```html
-<!-- 4.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -376,7 +365,7 @@ nonzero规则和evenodd规则计算的东西还不一样，nonzero是计算顺�
     </style>
   </head>
   <body>
-    <script src="./drawGrid.js"></script>
+    <script src="../drawGrid.js"></script>
     <script>
       // 被裁剪的参考图像。
       {
