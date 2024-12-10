@@ -226,18 +226,11 @@
   
 
 - [ ] [0025. 使用 ctx.quadraticCurveTo、ctx.bezierCurveTo 绘制贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md) <!-- [locale](./0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md) -->  
-  
-  - [1. 📝 Summary](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#1--summary)
-  - [2. 🔗 links](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#2--links)
-  - [3. 📒 notes](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#3--notes)
-    - [3.1. 二次贝塞尔曲线绘制原理](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#31-二次贝塞尔曲线绘制原理)
-      - [3.1.1. 1. 动图](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#311-1-动图)
-      - [3.1.2. 2. 二次贝塞尔曲线的绘制原理](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#312-2-二次贝塞尔曲线的绘制原理)
-    - [3.2. 三次贝塞尔曲线绘制原理](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#32-三次贝塞尔曲线绘制原理)
-      - [3.2.1. 1. 动图](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#321-1-动图)
-      - [3.2.2. 2. 三次贝塞尔曲线的绘制原理](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#322-2-三次贝塞尔曲线的绘制原理)
-  - [4. 💻 demo1 - 二次贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#4--demo1---二次贝塞尔曲线)
-  - [5. 💻 demo2 - 三次贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#5--demo2---三次贝塞尔曲线)
+  - [1. 📒 二次、三次贝塞尔曲线绘制原理](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#1--二次三次贝塞尔曲线绘制原理)
+  - [2. 💻 demos.1 - 二次贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#2--demos1---二次贝塞尔曲线)
+  - [3. 💻 demos.2 - 三次贝塞尔曲线](https://github.com/Tdahuyou/canvas/tree/main/0025.%20%E4%BD%BF%E7%94%A8%20ctx.quadraticCurveTo%E3%80%81ctx.bezierCurveTo%20%E7%BB%98%E5%88%B6%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/README.md#3--demos2---三次贝塞尔曲线)
+  - `ctx.quadraticCurveTo`、`ctx.bezierCurveTo` 这俩 API 的使用很简单，无非就是传入 2 个点还是 3 个点。重点在于理解贝塞尔曲线的绘制原理。理解原理后，自然就理解这俩 API 应该如何使用了。
+  - https://blog.csdn.net/m0_37602827/article/details/118165217 - CSDN - 贝塞尔曲线原理 - 这是 CSDN 上的一篇介绍贝塞尔曲线原理的文章。
   
 
 ## 5. 文本处理

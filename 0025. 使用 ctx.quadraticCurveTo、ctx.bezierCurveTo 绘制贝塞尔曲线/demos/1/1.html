@@ -6,39 +6,36 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="./drawGrid.js"></script>
+    <script src="../drawGrid.js"></script>
     <script>
       const cavnas = document.createElement('canvas')
-      document.body.appendChild(cavnas)
       drawGrid(cavnas, 500, 500, 50)
+      document.body.appendChild(cavnas)
       const ctx = cavnas.getContext('2d')
-      ctx.beginPath()
 
       ctx.fillStyle = 'red'
 
+      ctx.beginPath()
       ctx.arc(50, 200, 4, 0, Math.PI * 2) // 起点
       ctx.fill()
       ctx.beginPath()
-      ctx.arc(100, 100, 4, 0, Math.PI * 2) // 控制点 1
-      ctx.fill()
-      ctx.beginPath()
-      ctx.arc(200, 300, 4, 0, Math.PI * 2) // 控制点 2
+      ctx.arc(100, 100, 4, 0, Math.PI * 2) // 控制点
       ctx.fill()
       ctx.beginPath()
       ctx.arc(250, 200, 4, 0, Math.PI * 2) // 终点
       ctx.fill()
 
-      // ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
-      // 使用 ctx.bezierCurveTo 方法绘制三次贝塞尔曲线
+      // ctx.quadraticCurveTo(cpx, cpy, x, y)
+      // 使用 ctx.quadraticCurveTo 方法绘制二次贝塞尔曲线
+
+      // cpx cpy 表示控制点坐标
+      // x y 表示终点坐标
 
       // 起点坐标是 moveTo 设置，或者是上一次绘图的结尾。
-      // cp1x cp1y 表示控制点 1 坐标
-      // cp2x cp2y 表示控制点 2 坐标
-      // x y 表示终点坐标
 
       ctx.beginPath()
       ctx.moveTo(50, 200)
-      ctx.bezierCurveTo(100, 100, 200, 300, 250, 200)
+      ctx.quadraticCurveTo(100, 100, 250, 200)
       ctx.stroke()
     </script>
   </body>
