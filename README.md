@@ -402,6 +402,7 @@
   - ctx.clip 的基本使用是比较简单的，但是填充规则不太好理解，并且暂时也还不清楚填充规则有何实际的应用场景……
   - 对于填充规则的介绍，文中引用了“张鑫旭”老师的博客文章 —— 搞懂 SVG/Canvas 中 nonzero 和 evenodd 填充规则。
   - ⏰ 在这篇文章的最后一个示例中，存在个问题还没理解。
+  - nonzero 和 evenodd 填充规则在笔记 svg.0024 中也有提及。
   
 
 - [ ] [0032. 使用 ctx.createPattern 创建填充图案](https://github.com/Tdahuyou/canvas/tree/main/0032.%20%E4%BD%BF%E7%94%A8%20ctx.createPattern%20%E5%88%9B%E5%BB%BA%E5%A1%AB%E5%85%85%E5%9B%BE%E6%A1%88/README.md) <!-- [locale](./0032.%20%E4%BD%BF%E7%94%A8%20ctx.createPattern%20%E5%88%9B%E5%BB%BA%E5%A1%AB%E5%85%85%E5%9B%BE%E6%A1%88/README.md) -->  
