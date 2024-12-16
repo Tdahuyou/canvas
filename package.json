@@ -1,9 +1,16 @@
 {
-    "scripts": {
-        "merge": "           node ./node_modules/tnotes   --mergeREADME         --repoName=canvas",
-        "update": "          node ./node_modules/tnotes   --updateREADME        --repoName=canvas",
-        "distribute": "      node ./node_modules/tnotes   --distributeREADME    --repoName=canvas",
-        "sync": "            node ./node_modules/tnotes   --syncREADME          --repoName=canvas",
-        "docs:publish": "    node ./node_modules/tnotes/scripts/docs-publish.js"
-    }
+  "scripts": {
+    "merge": "           node ./node_modules/tnotes   --mergeREADME         --repoName=canvas",
+    "update": "          node ./node_modules/tnotes   --updateREADME        --repoName=canvas",
+    "distribute": "      node ./node_modules/tnotes   --distributeREADME    --repoName=canvas",
+    "sync": "            node ./node_modules/tnotes   --syncREADME          --repoName=canvas",
+    "docs:publish": "    node ./node_modules/tnotes/scripts/docs-publish.js"
+  },
+  "tnotesConfig": {
+    "ignoreDirs": [
+      "md-imgs",
+      ".git",
+      ".vscode"
+    ]
+  }
 }
